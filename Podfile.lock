@@ -1,0 +1,20 @@
+PODS:
+  - Intercom (7.1.1)
+  - youtube-ios-player-helper (1.0.2)
+
+DEPENDENCIES:
+  - Intercom
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Intercom
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Intercom: 4c1d90a1eacd7068943cb16a6506fc6ef326144b
+  youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
+
+PODFILE CHECKSUM: fa9d07473f379535cba72f7772c7d340e51a57c4
+
+COCOAPODS: 1.9.1

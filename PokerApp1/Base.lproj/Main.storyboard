@@ -11,23 +11,134 @@
         <!--Poker news-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="NewsVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NewsVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XMU-Pa-2Zv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCellID" rowHeight="151" id="aq2-b5-7VX" customClass="NewsCell" customModule="Poker_Guide" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="151"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aq2-b5-7VX" id="XmH-TE-RxE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-b3-EsE">
+                                                    <rect key="frame" x="23" y="14" width="368" height="123"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ekv-Jw-Q6V">
+                                                            <rect key="frame" x="5" y="5" width="358" height="113"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl4-4f-Z3n">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="41.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx6-5J-TzS">
+                                                                    <rect key="frame" x="0.0" y="44.5" width="30.5" height="30"/>
+                                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdw-dg-WtZ">
+                                                                    <rect key="frame" x="0.0" y="77.5" width="30.5" height="35.5"/>
+                                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ekv-Jw-Q6V" secondAttribute="trailing" constant="5" id="3U1-GG-ONG"/>
+                                                        <constraint firstItem="ekv-Jw-Q6V" firstAttribute="centerX" secondItem="yTh-b3-EsE" secondAttribute="centerX" id="KlB-Ew-k7X"/>
+                                                        <constraint firstItem="ekv-Jw-Q6V" firstAttribute="leading" secondItem="yTh-b3-EsE" secondAttribute="leading" constant="5" id="UUv-6O-RYb"/>
+                                                        <constraint firstItem="ekv-Jw-Q6V" firstAttribute="centerY" secondItem="yTh-b3-EsE" secondAttribute="centerY" id="nNJ-JK-7VJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ekv-Jw-Q6V" secondAttribute="bottom" constant="5" id="rlO-Lr-jre"/>
+                                                        <constraint firstItem="ekv-Jw-Q6V" firstAttribute="top" secondItem="yTh-b3-EsE" secondAttribute="top" constant="5" id="xvR-c3-6OD"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yTh-b3-EsE" firstAttribute="leading" secondItem="XmH-TE-RxE" secondAttribute="leadingMargin" constant="3" id="HYT-AL-ARs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yTh-b3-EsE" secondAttribute="trailing" constant="3" id="YbR-89-OUk"/>
+                                                <constraint firstItem="yTh-b3-EsE" firstAttribute="top" secondItem="XmH-TE-RxE" secondAttribute="topMargin" constant="3" id="h4z-3z-H2y"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yTh-b3-EsE" secondAttribute="bottom" constant="3" id="zD3-dl-lqr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="backView2" destination="yTh-b3-EsE" id="wNR-j7-l25"/>
+                                            <outlet property="newsAuthor" destination="Rdw-dg-WtZ" id="ANp-rp-rxS"/>
+                                            <outlet property="newsDate" destination="jx6-5J-TzS" id="y2S-gP-0IE"/>
+                                            <outlet property="newsTitle" destination="Dl4-4f-Z3n" id="VyW-7y-775"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Syh-WM-rQq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ni4-gS-Mxf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XMU-Pa-2Zv" secondAttribute="bottom" id="BzX-X9-rcO"/>
+                            <constraint firstItem="XMU-Pa-2Zv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="LEF-N7-WRv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XMU-Pa-2Zv" secondAttribute="trailing" id="Tgz-mO-aTb"/>
+                            <constraint firstItem="XMU-Pa-2Zv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="neN-X1-BSm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Poker news" id="qHy-C4-qv5"/>
+                    <connections>
+                        <outlet property="tableView" destination="XMU-Pa-2Zv" id="eCJ-L2-z2q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="-895"/>
+            <point key="canvasLocation" x="1782.608695652174" y="-895.3125"/>
+        </scene>
+        <!--News BodyVC-->
+        <scene sceneID="mlr-yz-g8p">
+            <objects>
+                <viewController storyboardIdentifier="NewsBodyVC" id="Oqu-0T-wsb" customClass="NewsBodyVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rIf-D7-9GU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-6W-1s0">
+                                <rect key="frame" x="35" y="54" width="344" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BfJ-6W-1s0" firstAttribute="leading" secondItem="udx-vH-WvG" secondAttribute="leading" constant="35" id="Gup-Fj-yyr"/>
+                            <constraint firstItem="udx-vH-WvG" firstAttribute="trailing" secondItem="BfJ-6W-1s0" secondAttribute="trailing" constant="35" id="bmd-Do-fhW"/>
+                            <constraint firstItem="BfJ-6W-1s0" firstAttribute="top" secondItem="udx-vH-WvG" secondAttribute="top" constant="10" id="qp5-kj-0n1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="udx-vH-WvG"/>
+                    </view>
+                    <connections>
+                        <outlet property="newsBodyLabel" destination="BfJ-6W-1s0" id="oU7-uN-mze"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaD-Nq-cfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2590" y="-895"/>
         </scene>
         <!--Poker articles-->
         <scene sceneID="sSD-af-0bA">
             <objects>
-                <viewController id="IOn-g5-44H" customClass="ArticlesVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IOn-g5-44H" customClass="ArticlesVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wbn-1p-uWB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +154,7 @@
         <!--Article DetailsVC-->
         <scene sceneID="qEr-sF-KCV">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="Q2O-CX-jg3" customClass="ArticleDetailsVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Q2O-CX-jg3" customClass="ArticleDetailsVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X5a-sR-xDj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +229,7 @@
         <!--Video lessons-->
         <scene sceneID="o1K-9V-JLH">
             <objects>
-                <viewController id="kgc-An-dMh" customClass="VideoLessonsVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kgc-An-dMh" customClass="VideoLessonsVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MTR-sX-t04">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +245,7 @@
         <!--Play VideoVC-->
         <scene sceneID="RRG-Xe-5WH">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="p70-oO-N7k" customClass="PlayVideoVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="p70-oO-N7k" customClass="PlayVideoVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wo6-Es-Sbj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +279,7 @@
         <!--Support-->
         <scene sceneID="zQF-Dg-igR">
             <objects>
-                <viewController id="eVz-RC-3Mp" customClass="IntercomVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eVz-RC-3Mp" customClass="IntercomVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lLh-gZ-Xjb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +295,7 @@
         <!--MoreVC-->
         <scene sceneID="eqe-jB-Svb">
             <objects>
-                <viewController id="xxl-sf-9Gf" customClass="MoreVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xxl-sf-9Gf" customClass="MoreVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PcT-hZ-PPX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
