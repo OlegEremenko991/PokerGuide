@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NewsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
     }
 
 

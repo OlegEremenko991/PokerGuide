@@ -7,25 +7,48 @@
 //
 
 import UIKit
+import Intercom
+
+let INTERCOM_APP_ID = "btbq1gm2"
+let INTERCOM_API_KEY = "ios_sdk-e7ab13b9da8df915f2e00aa4b16a90e06501b0d1"
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Intercom.setApiKey(INTERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
+        Intercom.registerUnidentifiedUser()
+
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
+    
+// MARK: Show Intercom when "chat" tabbar is tapped, close "chat" tabbar immediately after closing Intercom
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
 
+        if viewController == tabBarController.viewControllers?[3] {
+            DispatchQueue.main.async {
+                Intercom.presentMessenger()
+            }
+            return false
+        } else {
+            return true
+        }
+    }
+
+    // MARK: UISceneSession Lifecycle
+    
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.

@@ -1,24 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EfL-K4-rAJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Poker news-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NewsVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Poker news" id="qHy-C4-qv5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1783" y="-895"/>
+        </scene>
+        <!--Poker articles-->
+        <scene sceneID="sSD-af-0bA">
+            <objects>
+                <viewController id="IOn-g5-44H" customClass="ArticlesVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wbn-1p-uWB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gj5-WN-AbC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Poker articles" id="bql-z8-wwl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYK-LW-Mir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="-175"/>
+        </scene>
+        <!--Article DetailsVC-->
+        <scene sceneID="qEr-sF-KCV">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Q2O-CX-jg3" customClass="ArticleDetailsVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X5a-sR-xDj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="s2n-MH-hUO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5t5-zx-Mal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2590" y="-175"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="a77-KR-hgw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EfL-K4-rAJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L2s-2R-XJr">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CIB-y2-NsX" kind="relationship" relationship="viewControllers" id="8KT-WL-6na"/>
+                        <segue destination="vO0-pg-lcZ" kind="relationship" relationship="viewControllers" id="ilH-li-xoI"/>
+                        <segue destination="zpg-cb-JaN" kind="relationship" relationship="viewControllers" id="HuN-Re-Rbd"/>
+                        <segue destination="eVz-RC-3Mp" kind="relationship" relationship="viewControllers" id="rKT-Fh-hyN"/>
+                        <segue destination="xxl-sf-9Gf" kind="relationship" relationship="viewControllers" id="knZ-H4-A4L"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiY-5g-kMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="530"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="TFn-bO-6A4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CIB-y2-NsX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="News" id="EAT-o6-pz4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="E1I-aJ-FAI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gr0-uc-jkH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRu-aI-CpZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="-895"/>
+        </scene>
+        <!--Articles-->
+        <scene sceneID="Hs4-RP-bBd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vO0-pg-lcZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Articles" image="Articles" id="gvI-GO-h76"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="slk-UZ-VTE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IOn-g5-44H" kind="relationship" relationship="rootViewController" id="h4r-HD-25q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToX-K5-PuS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="-175"/>
+        </scene>
+        <!--Video lessons-->
+        <scene sceneID="o1K-9V-JLH">
+            <objects>
+                <viewController id="kgc-An-dMh" customClass="VideoLessonsVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MTR-sX-t04">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oKf-4G-JV8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video lessons" id="uZz-hP-3Pi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ro-Ok-YRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="530"/>
+        </scene>
+        <!--Play VideoVC-->
+        <scene sceneID="RRG-Xe-5WH">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="p70-oO-N7k" customClass="PlayVideoVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wo6-Es-Sbj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dNt-wT-HaE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYE-at-tPr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2590" y="530"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="jOS-BK-lPo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zpg-cb-JaN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video" image="Video" id="V7l-ZW-I83"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="cV3-k4-joN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kgc-An-dMh" kind="relationship" relationship="rootViewController" id="7dE-m2-X6T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxS-Df-LOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="531"/>
+        </scene>
+        <!--Support-->
+        <scene sceneID="zQF-Dg-igR">
+            <objects>
+                <viewController id="eVz-RC-3Mp" customClass="IntercomVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lLh-gZ-Xjb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PaT-hZ-mdY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Support" image="Chat" id="P8a-Qf-4Mv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tz9-hY-Ki0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="1246"/>
+        </scene>
+        <!--MoreVC-->
+        <scene sceneID="eqe-jB-Svb">
+            <objects>
+                <viewController id="xxl-sf-9Gf" customClass="MoreVC" customModule="PokerApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PcT-hZ-PPX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="8Wv-La-4BJ">
+                                <rect key="frame" x="132" y="353" width="150" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRe-5v-CdH">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <state key="normal" title="Leave feedback"/>
+                                        <connections>
+                                            <action selector="feedbackTapped:" destination="xxl-sf-9Gf" eventType="touchUpInside" id="RFk-Pa-zHl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8S-OZ-tf7">
+                                        <rect key="frame" x="0.0" y="80" width="150" height="30"/>
+                                        <state key="normal" title="Report a bug"/>
+                                        <connections>
+                                            <action selector="bugTapped:" destination="xxl-sf-9Gf" eventType="touchUpInside" id="Acl-KE-NK8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sk-dh-rMu">
+                                        <rect key="frame" x="0.0" y="160" width="150" height="30"/>
+                                        <state key="normal" title="Rate the app"/>
+                                        <connections>
+                                            <action selector="rateTapped:" destination="xxl-sf-9Gf" eventType="touchUpInside" id="50z-nL-qfE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AKh-8H-Nae"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Wv-La-4BJ" firstAttribute="centerX" secondItem="PcT-hZ-PPX" secondAttribute="centerX" id="5Jx-KP-722"/>
+                            <constraint firstItem="8Wv-La-4BJ" firstAttribute="centerY" secondItem="PcT-hZ-PPX" secondAttribute="centerY" id="e69-YO-l9P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ut2-Mx-6Wa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="sYz-04-uzj"/>
+                    <connections>
+                        <outlet property="bugButton" destination="N8S-OZ-tf7" id="zjr-Nn-fOv"/>
+                        <outlet property="feedbackButton" destination="tRe-5v-CdH" id="SSv-Ld-rzF"/>
+                        <outlet property="rateButton" destination="0sk-dh-rMu" id="hqN-zi-ppX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdl-zF-rrr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="1952"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Articles" width="23" height="23"/>
+        <image name="Chat" width="23" height="23"/>
+        <image name="News" width="23" height="23"/>
+        <image name="Video" width="23" height="23"/>
+    </resources>
 </document>
