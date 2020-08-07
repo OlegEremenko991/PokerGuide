@@ -30,6 +30,10 @@
 		671D689F24DC6F2A004FDEAC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689E24DC6F2A004FDEAC /* Video.swift */; };
 		671D68A124DC74D0004FDEAC /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A024DC74D0004FDEAC /* UIView_Extension.swift */; };
 		671D68A424DC772C004FDEAC /* NewsBodyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A324DC772C004FDEAC /* NewsBodyVC.swift */; };
+		671D68A624DD302E004FDEAC /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 671D68A524DD302E004FDEAC /* Articles.json */; };
+		671D68A824DD7672004FDEAC /* UIButton_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A724DD7672004FDEAC /* UIButton_Extension.swift */; };
+		671D68AA24DD76F7004FDEAC /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */; };
+		671D68AC24DD7710004FDEAC /* UILabel_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		671D689E24DC6F2A004FDEAC /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		671D68A024DC74D0004FDEAC /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
 		671D68A324DC772C004FDEAC /* NewsBodyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBodyVC.swift; sourceTree = "<group>"; };
+		671D68A524DD302E004FDEAC /* Articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Articles.json; sourceTree = "<group>"; };
+		671D68A724DD7672004FDEAC /* UIButton_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Extension.swift; sourceTree = "<group>"; };
+		671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
+		671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel_Extension.swift; sourceTree = "<group>"; };
 		E5FFD43C20D18EC59112BE05 /* Pods-PokerApp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerApp1.debug.xcconfig"; path = "Target Support Files/Pods-PokerApp1/Pods-PokerApp1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				671D687A24DBE3EC004FDEAC /* News.json */,
+				671D68A524DD302E004FDEAC /* Articles.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -198,6 +207,9 @@
 			children = (
 				671D689824DC6E9E004FDEAC /* DataLoader.swift */,
 				671D68A024DC74D0004FDEAC /* UIView_Extension.swift */,
+				671D68A724DD7672004FDEAC /* UIButton_Extension.swift */,
+				671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */,
+				671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -289,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				671D687324DBE3D0004FDEAC /* LaunchScreen.storyboard in Resources */,
+				671D68A624DD302E004FDEAC /* Articles.json in Resources */,
 				671D687024DBE3D0004FDEAC /* Assets.xcassets in Resources */,
 				671D687B24DBE3EC004FDEAC /* News.json in Resources */,
 				671D686E24DBE3CB004FDEAC /* Main.storyboard in Resources */,
@@ -366,6 +379,7 @@
 				671D688B24DBF4F2004FDEAC /* VideoCell.swift in Sources */,
 				671D688324DBF49E004FDEAC /* ArticleDetailsVC.swift in Sources */,
 				671D688624DBF4BF004FDEAC /* VideoLessonsVC.swift in Sources */,
+				671D68A824DD7672004FDEAC /* UIButton_Extension.swift in Sources */,
 				671D689B24DC6EA4004FDEAC /* News.swift in Sources */,
 				671D688F24DBF518004FDEAC /* NewsCell.swift in Sources */,
 				671D688924DBF4E2004FDEAC /* PlayVideoVC.swift in Sources */,
@@ -373,12 +387,14 @@
 				671D689524DBF547004FDEAC /* MoreVC.swift in Sources */,
 				671D689224DBF533004FDEAC /* IntercomVC.swift in Sources */,
 				671D689924DC6E9E004FDEAC /* DataLoader.swift in Sources */,
+				671D68AC24DD7710004FDEAC /* UILabel_Extension.swift in Sources */,
 				671D686724DBE3CB004FDEAC /* AppDelegate.swift in Sources */,
 				671D686924DBE3CB004FDEAC /* SceneDelegate.swift in Sources */,
 				671D689F24DC6F2A004FDEAC /* Video.swift in Sources */,
 				671D687F24DBF46E004FDEAC /* ArticlesVC.swift in Sources */,
 				671D689D24DC6F24004FDEAC /* Article.swift in Sources */,
 				671D68A124DC74D0004FDEAC /* UIView_Extension.swift in Sources */,
+				671D68AA24DD76F7004FDEAC /* UIColor_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,76 +2,87 @@
     {
         "id" : 1,
         "title": "WSOP ROUNDUP",
+        "imageName": "News1",
         "date": "August 5, 2020",
         "author": "by Sean Chaffin",
         "body": "Now in its third week at GGPoker, the WSOP Online now takes the spotlight with WSOP.com events wrapped up. The series has already awarded 18 bracelets with 36 more to go. As expected, with players around the world now involved, the series has seen a nice increase in prize pools. That includes massive numbers in some of the smaller buy-in events."
     },
     {
         "id" : 2,
-        "title": "WSOP Legend: Two-Time Main Event Champ Johnny Chan",
+        "title": "Two-Time Main Event Champ Johnny Chan",
+        "imageName": "News2",
         "date": "August 5, 2020",
         "author": "by Mo Nuwwarah",
         "body": "No player can match the incredible three-year run put together by Johnny Chan. A 10-time bracelet winner and participant in high-stakes cash games both televised and not during his career, Chan has plenty to point to when it comes to poker plaudits. But no matter what he accomplishes in this game, it seems more likely than not that he'll be most remembered for what he did in the WSOP Main Event from 1987-1989."
     },
     {
         "id" : 3,
-        "title": "Natural8 2020 WSOP Online Performance of the Week: Ian Steinman Tops $100K Leaderboard",
+        "title": "Ian Steinman Tops $100K Leaderboard",
+        "imageName": "News3",
         "date": "August 5, 2020",
         "author": "by Chad Holloway",
         "body": "Natural8 is home to the WSOP 2020 Online with 54 Bracelet Events taking place from July 19th till 6th September 6th. Win a Bracelet and join the exclusive Natural8 Winner's Circle where up to $700,000 in Sponsorship rewards are waiting to be claimed. Start your journey by exploring the WSOP Silk Road Micro-Stakes Tournaments or via the $5,000,000 WSOP Giveaway. The opportunities are endless."
     },
     {
         "id" : 4,
-        "title": "Tournament Spotlight: $150 GGMasters WSOP Edition, $1m GTD",
+        "title": "$150 GGMasters WSOP Edition",
+        "imageName": "News4",
         "date": "August 5, 2020",
         "author": "by Will Shillibier",
-        "body": "This Tournament Spotlight aims to showcase some of the most exciting poker tournaments that are happening this weekend. This week it's the turn of the $150 GGMasters WSOP Edition! Before the 2020 WSOP Online schedule was even published, we thought there was a chance of seeing the ever-popular GGMasters make its way into the schedule, and we weren't wrong! Launched in February, the GGMasters originally came with a $300,000 guarantee before being increased to $500,000 later in the year. There is also a Player of the Year leaderboard for this tournament, granting one player a $500,000 GGPoker sponsorship package"
+        "body": "This Tournament Spotlight aims to showcase some of the most exciting poker tournaments that are happening this weekend. This week it's the turn of the $150 GGMasters WSOP Edition! Before the 2020 WSOP Online schedule was even published, we thought there was a chance of seeing the ever-popular GGMasters make its way into the schedule, and we weren't wrong! Launched in February, the GGMasters originally came with a $300,000 guarantee before being increased to $500,000 later in the year. There is also a Player of the Year leaderboard for this tournament, granting one player a $500,000 GGPoker sponsorship package."
     },
     {
         "id" : 5,
         "title": "Two More Winners Crowned in 2020 WSOP Online",
+        "imageName": "News5",
         "date": "August 3, 2020",
         "author": "by Lyle Bateman",
         "body": "It was another action-packed Sunday at the GGPoker tables with three more WSOP Online events taking place. Two events crowned winners, with Malaysia's Paul Teoh and Lithuania's Vladas Burneikis adding their names to the list of 2020 WSOP Online bracelet winners, with nine other players still in with a chance as the Millionaire Maker played down to a final table!"
     },
     {
         "id" : 6,
-        "title": "Dzivielevski Wins Second Bracelet in WSOP Online PLOSSUS",
+        "title": "Dzivielevski Wins Second Bracelet in WSOP Online",
+        "imageName": "News6",
         "date": "August 2, 2020",
         "author": "by Jason Glatzer",
         "body": "Brazil's Yuri Dzivieleski became the latest player to find WSOP gold at GGPoker after shipping Event 42: $400 PLOSSUS for a huge payout of $227,557. In addition to the prize money and the WSOP bracelet Dzivieleski also won an added WSOP Europe package valued at $15,000 for being the last player standing. Dzivielevski is no stranger to both online and live poker success. He is currently ranked in fifth place in the world for online tournament players according to PocketFives where he was ranked top of the worldwide leaderboard several times in 2014 and 2015. Now he has a second bracelet and it is a question of whether he can win more!"
     },
     {
         "id" : 7,
-        "title": "Nahrain “2Rivers” Tamero Wins 2020 WSOP Online Event 31: $1,000 NLH Championship - $310,832",
+        "title": "Nahrain “2Rivers” Tamero Wins 2020 WSOP Online Event 31",
+        "imageName": "News7",
         "date": "August 2, 2020",
         "author": "by Chad Holloway",
-        "body": "On Friday night, the 2020 WSOP Online Series Event 31: $1,000 NLH Championship attracted 1,455 players who rebought 671 times. The 2,126-entry field resulted in a $2,019,700 prize pool - the largest out of all 31 events, and after nearly 12 hours of play, Nahrain “2Rivers” Tamero emerged victorious to capture the bracelet and $310,831.83 first-place prize. Tamero has amassed over $158,000 in lifetime live tournament earnings, of which just a small $3,428 cash came from the WSOP for a 315th-place finish in the 2018 WSOP $888 Crazy Eights event"
+        "body": "On Friday night, the 2020 WSOP Online Series Event 31: $1,000 NLH Championship attracted 1,455 players who rebought 671 times. The 2,126-entry field resulted in a $2,019,700 prize pool - the largest out of all 31 events, and after nearly 12 hours of play, Nahrain “2Rivers” Tamero emerged victorious to capture the bracelet and $310,831.83 first-place prize. Tamero has amassed over $158,000 in lifetime live tournament earnings, of which just a small $3,428 cash came from the WSOP for a 315th-place finish in the 2018 WSOP $888 Crazy Eights event."
     },
     {
         "id" : 8,
-        "title": "GGPoker Donates Over $350,000 After HUGE WSOP Online Charity Event",
+        "title": "GGPoker Donates Over $350,000",
+        "imageName": "News8",
         "date": "July 31, 2020",
         "author": "by Jesse Fullen",
         "body": "GGPoker today announces that $257,853 was raised by the worldwide poker community via “Event #33: Every 1 for COVID Relief”, one of the poker tournaments in its WSOP Online 2020 series. GGPoker pledged a further $96,903, resulting in a total donation of $354,756 to Caesars Cares. Following the latest pledge, GGPoker and the worldwide poker community have now donated more than $600,000 in the past six months, with over $250,000 raised to fight COVID-19 via earlier GGPoker charity tournaments."
     },
     {
         "id" : 9,
-        "title": "Tournament Spotlight: WSOP.com $1,000 No Limit Hold'em Championship",
+        "title": "WSOP.com $1,000 No Limit Hold'em Championship",
+        "imageName": "News9",
         "date": "July 31, 2020",
         "author": "by Jason Glatzer",
         "body": "The World Series of Poker (WSOP) is wrapping up its online schedule at WSOP.com this weekend with a big bang! This is due to an OG-event on the schedule in the WSOP with Event #31: $1,000 No-Limit Hold’em Championship shuffling up and dealing at 6 p.m. EDT / 3 p.m. PDT. A total of 31 of the 85 WSOP online events were scheduled at WSOP.com for players in the United States with the remainder of the schedule set aside for the rest of the world at GGPoker. Players can join in on the action in the final event at WSOP.com provided that they are located in the states of Nevada or New Jersey at the time of play and are of at least 21-years of age. You don't have to be a resident of either state or event a resident in the United States to compete but you do need to be within the borders of either of the states for a chance at WSOP gold in the final WSOP event at WSOP.com this season."
     },
     {
         "id" : 10,
-        "title": "Ian “ApokerJoker2” Steinman Wins 2020 WSOP Online Event 27: $400 Freezeout - $110,557",
+        "title": "Ian “ApokerJoker2” Steinman Wins 2020 WSOP Online Event 27",
+        "imageName": "News10",
         "date": "July 28, 2020",
         "author": "by Chad Holloway",
         "body": "On Sunday night, the 2020 WSOP Event 27: $400 No-Limit Hold'em Freezeout attracted 1,940 players and 2016 WSOP.com Online Player of the Year Ian “ApokerJoker2” Steinman capture the $110,556.72 first-place prize and his first gold bracelet. A four-time WSOP Circuit ring winner, Steinman had $654,816 in WSOP-related series before the win. That included two prior final table appearances and 10 cashes in the online series. Steinman’s biggest live score was for $201,428 after he finished runner-up in the 2018 WPT Rolling Thunder, the same tournament in which he gained notoriety for folding a set of kings to Joe McKeehen."
     },
     {
         "id" : 11,
-        "title": "Ethan RampageP Yau Wins 2020 WSOP Online Event #26: Grande Final - $164,494",
+        "title": "Ethan RampageP Yau Wins 2020 WSOP Online Event #26",
+        "imageName": "News11",
         "date": "July 27, 2020",
         "author": "by Chad Holloway",
         "body": "On Sunday night, the 2020 WSOP Event 26: $500 No-Limit Hold'em Grande Finale attracted 1,677 players who rebought 825 times. The 2,502-entry field meant a $1,125,900 prize pool was created, and after 12 hours of play it was 22-year-old Ethan RampageP Yau capturing the bracelet and $164,493.99 first-place prize. Yau, who streamed the victory on YouTube to thousands of viewers under his Rampage Poker moniker, is a self-described $1-$3 no-limit hold’em player who often loses. According to HendonMob, he has just $2,180 in tournament earnings from a pair of small cashes at Encore Boston Harbor."
@@ -79,20 +90,23 @@
     {
         "id" : 12,
         "title": "GGPoker WSOP Online Recap",
+        "imageName": "News12",
         "date": "July 27, 2020",
         "author": "by Will Shillibier",
         "body": "Four more bracelet winners were confirmed last night on GGPoker after a huge day of WSOP Online action. As well as this, two final tables were confirmed in the COLOSSUS and PLOSSUS events. In total, over $7.5m of prize money was won at the online tables, with no repeat of last weekend's technical issues. The action continues this week with Event #43: $10,000 Short Deck No Limit Hold'em Championship on Tuesday, Event 44: $2,500 No Limit Hold'em 6-Handed on Wednesday and Event 45: $840 Bounty No Limit Hold'em on Thursday."
     },
     {
         "id" : 13,
-        "title": "Nicholas “mrfinalt” Kiley Wins 2020 WSOP Online Event 25: $500 NLH Summer Saver - $149,245",
+        "title": "Nicholas “mrfinalt” Kiley Wins 2020 WSOP Online Event 25",
+        "imageName": "News13",
         "date": "July 26, 2020",
         "author": "by Chad Holloway",
         "body": "On Saturday night, the 2020 WSOP Event 25: $500 No-Limit Hold'em Summer Saver attracted 1,484 players who rebought 671 times. The 2,155-entry field resulted in a $969,750 prize pool, and after 12 hours of play, Nicholas “mrfinalt” Kiley emerged victorious to win the bracelet and $149,244.52 first-place prize. Kiley, who hails from Utica, New York, had just a dozen WSOP-related cashes totaling $29,665 before the victory. That included three small cashes in the online series throughout July. In the live realm, Kiley has $57,088 in tournament earnings including a career-high $7,135 for finishing runner-up in the 2018 Run It Up Reno VI Kickoff event. A year later, he won the RUI Reno VIII 8-Game Championship for $5,220."
     },
     {
         "id" : 14,
-        "title": "Nick samadhi Binger Captures 2nd Bracelet in Event 24: $400 NLH 8-Handed - $133,413",
+        "title": "Nick samadhi Binger Captures 2nd Bracelet in Event 24",
+        "imageName": "News14",
         "date": "July 25, 2020",
         "author": "by Chad Holloway",
         "body": "On Friday night, the 2020 WSOP Event 24: $400 No-Limit Hold'em 8-Handed attracted 1,590 players who rebought 818 times. The 2,408-entry field resulted in an $866,880 prize pool, and after 12 hours of play, it was Nick “samadhi” Binger claiming his second bracelet and a $133,412.83 top prize. Binger, who has more than $2.3 million in lifetime live earnings, won his first bracelet back at the 2011 WSOP when he took down Event #57: $5,000 Pot-Limit Omaha Hi-Lo 8 or Better for $397,073."
@@ -100,6 +114,7 @@
     {
         "id" : 15,
         "title": "WSOP Legend: 10-Time Bracelet Winner Phil Ivey",
+        "imageName": "News15",
         "date": "July 23, 2020",
         "author": "by Mo Nuwwarah",
         "body": "Prior to 2000, Ivey didn't have any recorded WSOP cashes. The 23-year-old didn't waste any time establishing himself as one of the top up-and-coming players. That year, after already making one final table and finishing fifth, Ivey secured his first bracelet. He beat none other than fellow Hall of Famer Amarillo Slim Preston heads up to win Event 14: $2,500 Pot-Limit Omaha, a rebuy event, for his first bracelet and $195,000. All told, he collected more than $400,000 in prize money and had four bracelets at a time when most poker players' careers are in their infancies."

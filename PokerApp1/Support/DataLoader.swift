@@ -37,7 +37,7 @@ public class DataLoader {
 
     func loadArticles() {
 
-        if let fileLocation = Bundle.main.url(forResource: "JuiceRecipes", withExtension: "json") {
+        if let fileLocation = Bundle.main.url(forResource: "Articles", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileLocation)
                 let jsonDecoder = JSONDecoder()

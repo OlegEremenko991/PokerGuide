@@ -11,7 +11,8 @@ import Foundation
 struct Article: Codable {
     var id: Int
     var title: String
-    var date: String
+    var imageName: String
+//    var date: String
     var author: String
     var body: String
 }

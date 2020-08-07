@@ -11,6 +11,7 @@ import Foundation
 struct News: Codable {
     var id: Int
     var title: String
+    var imageName: String
     var date: String
     var author: String
     var body: String

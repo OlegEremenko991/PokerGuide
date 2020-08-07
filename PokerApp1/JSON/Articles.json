@@ -1,0 +1,124 @@
+[
+    {
+        "id" : 1,
+        "title": "An Introduction to Poker",
+        "imageName": "1",
+        "date": "August 5, 2020",
+        "author": "by Tom Leonard",
+        "body": "The object of poker is very simple – to win the money in the centre of the table, called the pot, which contains the sum of the bets that have been made by the participants of that hand. Players make their bets or wagers on the belief they have the best hand or in the hopes they can make a better hand give up, abdicating the pot to them. There is an old poker expression which states that a bet saved is a bet earned. This underscores the concept of discretion being the better part of valour and not continuing to call bets made by others, unless you believe you have the best hand. You may have heard the same concept expressed by the sage advice of “don’t throw good money after bad”."
+    },
+    {
+        "id" : 2,
+        "title": "Is Poker Luck or Skill Dependent",
+        "imageName": "2",
+        "date": "August 5, 2020",
+        "author": "by Tim Liapold",
+        "body": "The main difference in the role that luck plays between poker and casino games is the number of trials. In poker, while a knowledgeable player can lose in the short term he should be expected to win over time. This, of course, assumes that he is not playing with superior competition which is outplaying him. In casino games, while one can win easily in the short term, over time the house edge or percentage will grind a player down and ultimately he will lose. So, if you are truly a knowledgeable and disciplined poker player, you will have to be unlucky to lose while a player of games of pure chance needs to be lucky to win. You have come to the right place to deepen your knowledge of the game and hone the necessary skills to enable you to be a long term winner in the game of poker."
+    },
+    {
+        "id" : 3,
+        "title": "Getting Started",
+        "imageName": "3",
+        "date": "August 5, 2020",
+        "author": "by Charles Marvin",
+        "body": "We also strongly recommend you take this opportunity to open an online poker account and start playing just as soon as you feel comfortable. There are many sites to choose from. Studying the poker lessons here is crucial, but you will learn so much more by combining this with actual playing time. If you’re worried about the money, then don’t be – it need not cost you anything since you can try your luck at the play money tables until you’re comfortable playing for real money. Poker professional Mike Sexton is fond of saying that poker “can take a moment to learn but a lifetime to master”. Once you begin the journey you’ll never stop learning."
+    },
+    {
+        "id" : 4,
+        "title": "Royal Flush",
+        "imageName": "4",
+        "date": "August 5, 2020",
+        "author": "by Jim Byerson",
+        "body": "A Royal flush consists of five cards of the same suit, in sequence from 10 through to Ace. Remember that all suits are equal in poker. If two or more players hold a royal flush, highly unlikely, then the pot is split, i.e. the players share the winnings."
+    },
+    {
+        "id" : 5,
+        "title": "Straight Flush",
+        "imageName": "5",
+        "date": "August 3, 2020",
+        "author": "by Gale Crateman",
+        "body": "Five cards of the same suit, in sequence. This example shows a Jack high straight flush. If two or more players hold a straight flush then it is the highest that wins. For example, a Queen high straight flush beats a Jack high straight flush. You will notice that this is very similar to a Royal flush, and that’s because a Royal flush is in fact an ace high straight flush – but it’s given its very own ranking."
+    },
+    {
+        "id" : 6,
+        "title": "Four of a Kind",
+        "imageName": "6",
+        "date": "August 2, 2020",
+        "author": "by Mason Jilatzer",
+        "body": "This hand contains four cards of the same rank/value. This example shows four 8’s, plus a 5 (remember that all poker hands must have five cards). If two or more players have four of a kind, then the highest value wins (e.g. four 9’s beats four 8’s). If two or more players share the same four of a kind, which can happen when using community cards (more on that later) then the winner is decided by the fifth card. So a player with four 8’s and a 6 would beat a player with four 8’s and a 5."
+    },
+    {
+        "id" : 7,
+        "title": "Full House",
+        "imageName": "7",
+        "date": "August 2, 2020",
+        "author": "by Mike Gallaway",
+        "body": "A full house contains three cards of the same rank, plus a pair. In our example you can see three 10’s and a pair of 7’s. The value of the three matching cards determines the strength of a full house. So three Jack’s with a pair of 7’s would beat our example hand. If players share the same three cards, which is possible when using community cards, the strength of the pair is then taken into account. So, three 10’s and a pair of 8’s would beat our example hand."
+    },
+    {
+        "id" : 8,
+        "title": "Flush",
+        "imageName": "8",
+        "date": "July 31, 2020",
+        "author": "by Grasse Tillen",
+        "body": "Five cards of the same suit in any order. Our example shows a Queen high flush. If two or more players have a flush then the player with the highest ranked card wins. If the players share the same high card then it’s determined by the value of the 2nd, 3rd, 4th, and 5th card respectively."
+    },
+    {
+        "id" : 9,
+        "title": "Straight",
+        "imageName": "9",
+        "date": "July 31, 2020",
+        "author": "by Mason Schindler",
+        "body": "This hand contains five unsuited cards in sequence. Our example shows a King high straight. In the event of a tie, the best straight is determined by the highest ranked card. A straight consisting of 8, 9, 10, J, Q, would lose to our example hand. But a straight consisting of 10, J, Q, K, A, would win. Also note that an Ace can be used as the low card for a straight of A, 2, 3, 4, 5. This would lose to a straight of 2, 3, 4, 5, 6."
+    },
+    {
+        "id" : 10,
+        "title": "Three of a Kind",
+        "imageName": "10",
+        "date": "July 28, 2020",
+        "author": "by Brad Jason",
+        "body": "Three cards of the same rank, and two unrelated cards. Our example shows three 4’s. Three 5’s would beat our example hand, three 6’s would beat three 5’s, and so on. If players share the same three cards, then the value of the highest unrelated card would count and if necessary, the value of the second unrelated card. So, three 4’s with Jack, 8, would beat our example hand. As would three 4’s and 10, 9 - because 9 is higher than 8."
+    },
+    {
+        "id" : 11,
+        "title": "Two Pair",
+        "imageName": "11",
+        "date": "July 27, 2020",
+        "author": "by Jared Dickens",
+        "body": "Two cards of matching rank, with another two cards of another rank, plus an additional card. In the event of a tie, the highest pair wins. If players share the same highest pair, then the value of the next pair wins. For example, a pair of Aces, and a pair of 6’s would beat our example hand, as would a pair of Kings and a pair of 7’s. If two or more players share the same two pair, then the value of the fifth card counts. So, a pair of Kings, a pair of 6’s, with a 4, would beat our example hand."
+    },
+    {
+        "id" : 12,
+        "title": "One Pair",
+        "imageName": "12",
+        "date": "July 27, 2020",
+        "author": "by Tatius Rana",
+        "body": "A paired hand contains two cards of matching rank, plus three additional cards. The value of the pair determines who wins in the event of a tie. For example a pair of 10’s beats our example hand. If players share the same pair then the best hand is determined by the value of the highest additional card. If this is the same then it goes to the second card, and if necessary the third. So, a pair of 9’s with an Ace, 2, and 10, would beat our example hand. As would a pair of 9’s, King, 10, and a 3."
+    },
+    {
+        "id" : 13,
+        "title": "High Card",
+        "imageName": "13",
+        "date": "July 26, 2020",
+        "author": "by Alexandra Tércia",
+        "body": "If a hand doesn’t fall into any of the above categories, then it is judged on the value of the highest ranked card among the five. In this example we have a hand which is King high. If players share the same highest card, then it goes to the value of the 2nd, 3rd, 4th, and even 5th card if necessary. A hand of King, Queen, 9, 5, 4, would beat our example hand."
+    },
+    {
+        "id" : 14,
+        "title": "Letting Emotions Affect Your Play",
+        "imageName": "14",
+        "date": "July 25, 2020",
+        "author": "by Dorris Sudheer",
+        "body": "Whether it is from a bad day at work or a bad beat at the table, emotions can affect how you make decisions. This can result in unprofitable poker actions like chasing losses, making desperate moves or allowing your ego to take over. Beginners will often make rash, emotional decisions that can act like blinders, preventing them from taking in all the information they need to make a smart decision. Stuff happens. So if you feel like you are starting to make emotional decisions in a poker game, just take a step back and reset your mind."
+    },
+    {
+        "id" : 15,
+        "title": "Mistakes Are an Opportunity to Learn",
+        "imageName": "15",
+        "date": "July 23, 2020",
+        "author": "by Nathalie Giosuè",
+        "body": "Mistakes at the poker table can prove costly but as a beginner you should see them as an opportunity to learn. Don’t worry if you’re guilty of making any of the mistakes listed in this lesson. Everyone who plays poker makes mistakes all the time. Skilled poker players just make fewer mistakes. Hopefully now you know what needs improving and what parts of your game you should consider working on."
+    },
+    
+]
+

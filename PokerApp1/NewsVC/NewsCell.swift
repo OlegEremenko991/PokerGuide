@@ -13,6 +13,7 @@ class NewsCell: UITableViewCell {
     @IBOutlet weak var newsDate: UILabel!
     @IBOutlet weak var newsAuthor: UILabel!
     @IBOutlet weak var backView2: UIView!
+    @IBOutlet weak var newsImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,13 +25,17 @@ class NewsCell: UITableViewCell {
         selectedBackgroundView = UIView()
         selectedBackgroundView?.layer.cornerRadius = 10
         selectedBackgroundView?.backgroundColor = .lightGray
-        // Configure the view for the selected state
     }
     
     private func setupView(){
         contentView.layer.cornerRadius = 10
+        newsImageView.layer.cornerRadius = 10
         backView2.layer.cornerRadius = 10
         backView2.addShadow(width: 1.0, height: 2.0)
+        let labels = [newsTitle, newsDate, newsAuthor]
+        for x in labels {
+            x?.setCustomBackground()
+        }
     }
 
 }
