@@ -32,9 +32,10 @@ class NewsCell: UITableViewCell {
         newsImageView.layer.cornerRadius = 10
         backView2.layer.cornerRadius = 10
         backView2.addShadow(width: 1.0, height: 2.0)
+        backView2.backgroundColor = .black
         let labels = [newsTitle, newsDate, newsAuthor]
         for x in labels {
-            x?.setCustomBackground()
+            x?.textColor = .white
         }
     }
 
