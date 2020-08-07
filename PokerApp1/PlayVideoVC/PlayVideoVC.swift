@@ -7,24 +7,24 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
-class PlayVideoVC: UIViewController {
+class PlayVideoVC: UIViewController, YTPlayerViewDelegate {
 
+    @IBOutlet weak var playerView: YTPlayerView!
+    var videoID = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        playerView.delegate = self
+        loadVideo(id: videoID)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadVideo(id: String){
+        DispatchQueue.main.async {
+            self.playerView.load(withVideoId: id, playerVars: ["playsinline":1])
+        }
     }
-    */
+
 
 }

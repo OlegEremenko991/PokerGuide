@@ -1,0 +1,127 @@
+[
+    {
+        "id" : 1,
+        "title" : "How To Play Poker for Beginners",
+        "imageName" : "video1",
+        "previewImage" : "https://img.youtube.com/vi/NlFguTSypBQ/hqdefault.jpg",
+        "videoID" : "NlFguTSypBQ",
+        "videoLink" : "https://youtu.be/NlFguTSypBQ"
+    },
+    {
+        "id" : 2,
+        "title" : "How to Play Poker",
+        "imageName" : "video2",
+        "previewImage" : "https://img.youtube.com/vi/CpSewSHZhmo/hqdefault.jpg",
+        "videoID" : "CpSewSHZhmo",
+        "videoLink" : "https://youtu.be/CpSewSHZhmo"
+    },
+    {
+        "id" : 3,
+        "title" : "How to Play Texas Holdem Poker",
+        "imageName" : "video3",
+        "previewImage" : "https://img.youtube.com/vi/v8dqu_aVQk8/hqdefault.jpg",
+        "videoID" : "v8dqu_aVQk8",
+        "videoLink" : "https://youtu.be/v8dqu_aVQk8"
+    },
+    {
+        "id" : 4,
+        "title" : "The Poker Hand Hierarchy",
+        "imageName" : "video4",
+        "previewImage" : "https://img.youtube.com/vi/JhhyaD1npbM/hqdefault.jpg",
+        "videoID" : "JhhyaD1npbM",
+        "videoLink" : "https://youtu.be/JhhyaD1npbM"
+    },
+    {
+        "id" : 5,
+        "title" : "Poker: The Terminology",
+        "imageName" : "video5",
+        "previewImage" : "https://img.youtube.com/vi/dpS1nl4vExE/hqdefault.jpg",
+        "videoID" : "dpS1nl4vExE",
+        "videoLink" : "https://youtu.be/dpS1nl4vExE"
+    },
+    {
+        "id" : 6,
+        "title" : "Poker Strategy",
+        "imageName" : "video6",
+        "previewImage" : "https://img.youtube.com/vi/WsjOE97xkkM/hqdefault.jpg",
+        "videoID" : "WsjOE97xkkM",
+        "videoLink" : "https://youtu.be/WsjOE97xkkM"
+    },
+    {
+        "id" : 7,
+        "title" : "Poker: A Loose Player - An Out",
+        "imageName" : "video7",
+        "previewImage" : "https://img.youtube.com/vi/Zmt0UVBL5GM/hqdefault.jpg",
+        "videoID" : "Zmt0UVBL5GM",
+        "videoLink" : "https://youtu.be/Zmt0UVBL5GM"
+    },
+    {
+        "id" : 8,
+        "title" : "Poker: A Tight Player - The Tilt",
+        "imageName" : "video8",
+        "previewImage" : "https://img.youtube.com/vi/gU9AVAIk5bQ/hqdefault.jpg",
+        "videoID" : "gU9AVAIk5bQ",
+        "videoLink" : "https://youtu.be/gU9AVAIk5bQ"
+    },
+    {
+        "id" : 9,
+        "title" : "Poker: The Pot - Quads",
+        "imageName" : "video9",
+        "previewImage" : "https://img.youtube.com/vi/s0I7RqoBnek/hqdefault.jpg",
+        "videoID" : "s0I7RqoBnek",
+        "videoLink" : "https://youtu.be/s0I7RqoBnek"
+    },
+    {
+        "id" : 10,
+        "title" : "The Poker Hand Signals",
+        "imageName" : "video10",
+        "previewImage" : "https://img.youtube.com/vi/2iHCl3LQAAM/hqdefault.jpg",
+        "videoID" : "2iHCl3LQAAM",
+        "videoLink" : "https://youtu.be/2iHCl3LQAAM"
+    },
+    {
+        "id" : 11,
+        "title" : "Avoid the Common Mistakes",
+        "imageName" : "video11",
+        "previewImage" : "https://img.youtube.com/vi/OAzecWqLXLw/hqdefault.jpg",
+        "videoID" : "OAzecWqLXLw",
+        "videoLink" : "https://youtu.be/OAzecWqLXLw"
+    },
+    {
+        "id" : 12,
+        "title" : "Poker Ranges Explained",
+        "imageName" : "video12",
+        "previewImage" : "https://img.youtube.com/vi/f7rLc7mx000/hqdefault.jpg",
+        "videoID" : "f7rLc7mx000",
+        "videoLink" : "https://youtu.be/f7rLc7mx000"
+    },
+    {
+        "id" : 13,
+        "title" : "Best Starting Hands",
+        "imageName" : "video13",
+        "previewImage" : "https://img.youtube.com/vi/aN6_BPBy4tA/hqdefault.jpg",
+        "videoID" : "aN6_BPBy4tA",
+        "videoLink" : "https://youtu.be/aN6_BPBy4tA"
+    },
+    {
+        "id" : 14,
+        "title" : "How To Use Pot Odds In Poker",
+        "imageName" : "video14",
+        "previewImage" : "https://img.youtube.com/vi/Y_dVZYyBxjg/hqdefault.jpg",
+        "videoID" : "Y_dVZYyBxjg",
+        "videoLink" : "https://youtu.be/Y_dVZYyBxjg"
+    },
+    {
+        "id" : 15,
+        "title" : "How to Win at Poker - The Pre-Flop Checklist",
+        "imageName" : "video15",
+        "previewImage" : "https://img.youtube.com/vi/UB74LOr3YD0/hqdefault.jpg",
+        "videoID" : "UB74LOr3YD0",
+        "videoLink" : "https://youtu.be/UB74LOr3YD0"
+    }
+]
+
+
+
+
+

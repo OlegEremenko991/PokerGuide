@@ -34,6 +34,7 @@
 		671D68A824DD7672004FDEAC /* UIButton_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A724DD7672004FDEAC /* UIButton_Extension.swift */; };
 		671D68AA24DD76F7004FDEAC /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */; };
 		671D68AC24DD7710004FDEAC /* UILabel_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */; };
+		671D68AE24DDC30C004FDEAC /* Videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 671D68AD24DDC30C004FDEAC /* Videos.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		671D68A724DD7672004FDEAC /* UIButton_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Extension.swift; sourceTree = "<group>"; };
 		671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel_Extension.swift; sourceTree = "<group>"; };
+		671D68AD24DDC30C004FDEAC /* Videos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Videos.json; sourceTree = "<group>"; };
 		E5FFD43C20D18EC59112BE05 /* Pods-PokerApp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerApp1.debug.xcconfig"; path = "Target Support Files/Pods-PokerApp1/Pods-PokerApp1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 			children = (
 				671D687A24DBE3EC004FDEAC /* News.json */,
 				671D68A524DD302E004FDEAC /* Articles.json */,
+				671D68AD24DDC30C004FDEAC /* Videos.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				671D687324DBE3D0004FDEAC /* LaunchScreen.storyboard in Resources */,
+				671D68AE24DDC30C004FDEAC /* Videos.json in Resources */,
 				671D68A624DD302E004FDEAC /* Articles.json in Resources */,
 				671D687024DBE3D0004FDEAC /* Assets.xcassets in Resources */,
 				671D687B24DBE3EC004FDEAC /* News.json in Resources */,
