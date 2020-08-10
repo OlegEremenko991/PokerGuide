@@ -63,6 +63,7 @@ extension ArticlesVC: UITableViewDataSource, UITableViewDelegate {
         
         targetVC.articleImageName = article.imageName
         targetVC.articleTitle = article.title
+        targetVC.articleAuthor = article.author
         targetVC.articleBody = article.body
         
         tableView.deselectRow(at: indexPath, animated: true)

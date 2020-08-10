@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,67 +19,91 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		05DBC5A4A0411FC0868B1355180CD35D /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BDD77EDBEF821A0126E3797AEFC47B8 /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29B6F2D50CE48D4674F332F6FD5B6E44 /* Pods-PokerApp1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC67113A637EFDED7C7471FB0C65E381 /* Pods-PokerApp1-dummy.m */; };
+		05DBC5A4A0411FC0868B1355180CD35D /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E955AA7A5410B8EA29F962ACD1F1A5D /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A65627F6801E5B99CB551E4FAEF43F1 /* Pods-PokerApp1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC67113A637EFDED7C7471FB0C65E381 /* Pods-PokerApp1-dummy.m */; };
+		1C8ADDA52AF95C5855B299458D03CD2E /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE165BE5F69CB24BD28BA7CD4CB9611 /* OnboardViewController.swift */; };
 		559F7D2DAA6D86E23F8B2A651777E5BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7D8C05366F87C046219EDCB835447400 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FBD6E33112C5F8FC88BB1E1D5EF9DE4 /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		932EAA3D3C25C2D382FBA975C544F3B6 /* Pods-PokerApp1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9BF491D188CB682BCCCE5C981AC6C0 /* Pods-PokerApp1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95360566E941F235D6B8CE1C4C3035D1 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B35E45263C2AFB66970CED1034B9BA59 /* youtube-ios-player-helper-dummy.m */; };
-		A8C22822FA929E89335F959F79BD29D2 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C895499B1A4C2C550C80C6E62CD0DCAF /* Assets.bundle */; };
-		A9C44B4332A4F8D03DE90D2C14C87862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D03B6BD25AEC918C55C1A092C4ED472B /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 258A1A308F4B2B45F3AEAAD1B8AAFF02 /* YTPlayerView.m */; };
+		5BBC76C1CCF62EEA27A17654457981CE /* OnboardKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63DF5C86ACA2D9F02AE7BAA52E34FD5F /* OnboardKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78ADE0245CA9551F72EED1172D240BD4 /* Pods-PokerApp1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9BF491D188CB682BCCCE5C981AC6C0 /* Pods-PokerApp1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D8C05366F87C046219EDCB835447400 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A97ED3D3D60F896F477183FEB5A3FC /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95360566E941F235D6B8CE1C4C3035D1 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C03F9088E19BF03BAC26D25458A9B /* youtube-ios-player-helper-dummy.m */; };
+		9F740F29A5655FB3ED7343D70DD09556 /* OnboardKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F3430EDDAD8D9DFD7DA3770894FAC /* OnboardKit-dummy.m */; };
+		A8C22822FA929E89335F959F79BD29D2 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A85A8F8EAAA742B63C168A9548AC267 /* Assets.bundle */; };
+		B135E8EBD6FF8DEF1BC15C5E23A568A3 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D06231D71A6CECB0665DBB5E2BBF70 /* OnboardPageViewController.swift */; };
+		CE3A21343E1DADC1668809B1793A4FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D03B6BD25AEC918C55C1A092C4ED472B /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0972E4638B02FBB1DD3BB43B69AB7923 /* YTPlayerView.m */; };
+		DE8F14512EF9022D9CEBB994104DD502 /* OnboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E81090E09901DF639372ABC3BB60E /* OnboardPage.swift */; };
+		F01521454858B961BC7D5569A42B07F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		33F2CB95673BF9B096F62097FABF8FBA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
-			remoteInfo = "youtube-ios-player-helper";
-		};
-		49102EFA1E23F6F73AED42926DD63466 /* PBXContainerItemProxy */ = {
+		3FF0074BD7BAE947EF60C936B0D69A68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5563F7D95AD712211C69747B8DCD2168;
 			remoteInfo = Intercom;
 		};
+		4941FE94418C2E3FA5871A7D6C80CD88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
+			remoteInfo = "youtube-ios-player-helper";
+		};
+		648740FC4B2E2E575B71ADAD22D68214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6621189B26743A496AB5226EBAE0FB1E;
+			remoteInfo = OnboardKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08F655C6FAAC1485690E6C341991D049 /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
-		0F45A53A8D70F6E3E2E8068AEB924EAE /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
-		137A3DAF5E8D0DAEC7BCEA13C23E1F1A /* Intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Intercom.debug.xcconfig; sourceTree = "<group>"; };
-		258A1A308F4B2B45F3AEAAD1B8AAFF02 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
-		307B64CB2528FD223F8A2C6DF069DFFF /* Intercom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intercom.framework; path = Intercom/Intercom.framework; sourceTree = "<group>"; };
+		045C03F9088E19BF03BAC26D25458A9B /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		0972E4638B02FBB1DD3BB43B69AB7923 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
+		138E0A440090B0B338DCAADA9A2633FD /* Intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Intercom.debug.xcconfig; sourceTree = "<group>"; };
+		1F5B6EBB5BA74DF4ACD224CF87D2AADD /* OnboardKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnboardKit-prefix.pch"; sourceTree = "<group>"; };
+		2073DDA980E798EF15FB28ACB9764519 /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
+		28C06EEE794F1C760B9A0D0843A03710 /* IntercomTranslations.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IntercomTranslations.bundle; path = Intercom/Intercom.framework/Versions/A/Resources/IntercomTranslations.bundle; sourceTree = "<group>"; };
+		30E00FB11ED573440394A72F9A9FB61B /* OnboardKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnboardKit.modulemap; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3FB53706EAAC6D06E68510A5E0257F61 /* IntercomTranslations.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IntercomTranslations.bundle; path = Intercom/Intercom.framework/Versions/A/Resources/IntercomTranslations.bundle; sourceTree = "<group>"; };
+		3F2A9F4CFF3E3F696B4C08FDEE8C4FFB /* OnboardKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnboardKit.debug.xcconfig; sourceTree = "<group>"; };
 		429A1C0B852F68750461232891F659F1 /* Pods-PokerApp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PokerApp1.debug.xcconfig"; sourceTree = "<group>"; };
+		431004C4F2CD4438B98D9FA83272DCC2 /* Intercom.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Intercom.bundle; path = Intercom/Intercom.framework/Versions/A/Resources/Intercom.bundle; sourceTree = "<group>"; };
 		45A70A5386DAC30FC5604EAD75E49D33 /* Pods-PokerApp1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PokerApp1-Info.plist"; sourceTree = "<group>"; };
-		4BD9BCE4D95EA275CBC504060E64167E /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
+		475E81090E09901DF639372ABC3BB60E /* OnboardPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardPage.swift; path = OnboardKit/OnboardPage.swift; sourceTree = "<group>"; };
+		4EE165BE5F69CB24BD28BA7CD4CB9611 /* OnboardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardViewController.swift; path = OnboardKit/OnboardViewController.swift; sourceTree = "<group>"; };
+		50A97ED3D3D60F896F477183FEB5A3FC /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
 		53F534B87FA1389F0D8050B7C2D18057 /* Pods-PokerApp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PokerApp1.release.xcconfig"; sourceTree = "<group>"; };
+		599409E342A22D45B9024ABB2138E903 /* Intercom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intercom.framework; path = Intercom/Intercom.framework; sourceTree = "<group>"; };
+		5AFB339E643D83C49F42CB0B1FCC4CC7 /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
 		5BA2F2D3E14430658135A886F96B525A /* Pods-PokerApp1-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PokerApp1-resources.sh"; sourceTree = "<group>"; };
-		5BDD77EDBEF821A0126E3797AEFC47B8 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
-		7DD2B6552EC429AA89123F691A2A0BBC /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
+		5E955AA7A5410B8EA29F962ACD1F1A5D /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
+		61D06231D71A6CECB0665DBB5E2BBF70 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardPageViewController.swift; path = OnboardKit/OnboardPageViewController.swift; sourceTree = "<group>"; };
+		63DF5C86ACA2D9F02AE7BAA52E34FD5F /* OnboardKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnboardKit-umbrella.h"; sourceTree = "<group>"; };
+		660C51E58ABE80E8825FCF68335ABCBA /* OnboardKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnboardKit.release.xcconfig; sourceTree = "<group>"; };
+		6D7BE25E3443E95582801BE1250B684A /* Intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Intercom.release.xcconfig; sourceTree = "<group>"; };
+		80814A9D7DD9514F84B3B13C8484237E /* OnboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OnboardKit.framework; path = OnboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = youtube_ios_player_helper.framework; path = "youtube-ios-player-helper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88512D14D3F1BF9E4BD55623518D630D /* OnboardKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnboardKit-Info.plist"; sourceTree = "<group>"; };
+		8A824EF2AAF5362E5069A983A1D84A9A /* ICMCompany.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICMCompany.h; path = Intercom/Intercom.framework/Versions/A/Headers/ICMCompany.h; sourceTree = "<group>"; };
+		8A85A8F8EAAA742B63C168A9548AC267 /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
 		99BAFD0983F18A13377DD2BE8063E527 /* Pods-PokerApp1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PokerApp1.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FBD6E33112C5F8FC88BB1E1D5EF9DE4 /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
 		AB3CDBADB4CACEA6A869BC42A98E4659 /* Pods-PokerApp1-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PokerApp1-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AC67113A637EFDED7C7471FB0C65E381 /* Pods-PokerApp1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PokerApp1-dummy.m"; sourceTree = "<group>"; };
 		AF9BF491D188CB682BCCCE5C981AC6C0 /* Pods-PokerApp1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PokerApp1-umbrella.h"; sourceTree = "<group>"; };
-		B35E45263C2AFB66970CED1034B9BA59 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
 		B8587F9DC84DC2F2B76345A0F288F2E2 /* Pods_PokerApp1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PokerApp1.framework; path = "Pods-PokerApp1.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86880FC178099E11DFEF79CCEE33E15 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
+		BACCFF7522F1D86466D0C921782FEAA5 /* Intercom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Intercom.h; path = Intercom/Intercom.framework/Versions/A/Headers/Intercom.h; sourceTree = "<group>"; };
 		C30E01E243D90EE85F309D4993B2D046 /* Pods-PokerApp1-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PokerApp1-frameworks.sh"; sourceTree = "<group>"; };
-		C6F32BF93A67B8812F5E1D9C65D2DDD9 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
-		C895499B1A4C2C550C80C6E62CD0DCAF /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
-		D67B9B25DAD460C1CDFA686C8756037A /* Intercom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Intercom.h; path = Intercom/Intercom.framework/Versions/A/Headers/Intercom.h; sourceTree = "<group>"; };
+		CBFF16AFE8B12EEC781B1C243AB6A3D7 /* ICMUserAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICMUserAttributes.h; path = Intercom/Intercom.framework/Versions/A/Headers/ICMUserAttributes.h; sourceTree = "<group>"; };
 		D8A5FE637DC214B450BB550FFB6224D5 /* Pods-PokerApp1-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PokerApp1-acknowledgements.plist"; sourceTree = "<group>"; };
-		D90A58820BEF7BB791487A70E6E2126C /* Intercom.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Intercom.bundle; path = Intercom/Intercom.framework/Versions/A/Resources/Intercom.bundle; sourceTree = "<group>"; };
-		DCECF13C12B963410D2FF93F64E259F1 /* Intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Intercom.release.xcconfig; sourceTree = "<group>"; };
-		E3A1211554A4B5E705BFB5E94EE535C0 /* ICMCompany.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICMCompany.h; path = Intercom/Intercom.framework/Versions/A/Headers/ICMCompany.h; sourceTree = "<group>"; };
-		F962102E2574C30FBFC0D611533DDEC0 /* ICMUserAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICMUserAttributes.h; path = Intercom/Intercom.framework/Versions/A/Headers/ICMUserAttributes.h; sourceTree = "<group>"; };
+		DD8F3430EDDAD8D9DFD7DA3770894FAC /* OnboardKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnboardKit-dummy.m"; sourceTree = "<group>"; };
+		EB226DCBAC32617D852190E114D985C6 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
+		EDEDC9B681A2723127E2FA2626A07C61 /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,65 +115,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF7309B1E45DF828B59EC24135321FE0 /* Frameworks */ = {
+		722C5473DEA2FE647BEE4EB20E65E55F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C44B4332A4F8D03DE90D2C14C87862 /* Foundation.framework in Frameworks */,
+				F01521454858B961BC7D5569A42B07F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE77F80042E3BEE5A59F03B157D5B32E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3A21343E1DADC1668809B1793A4FE2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04BB9F9044E7367DED5B2F333F8CD0A5 /* Intercom */ = {
+		04285F7B705B05FF1823F8AF83200326 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E3A1211554A4B5E705BFB5E94EE535C0 /* ICMCompany.h */,
-				F962102E2574C30FBFC0D611533DDEC0 /* ICMUserAttributes.h */,
-				D67B9B25DAD460C1CDFA686C8756037A /* Intercom.h */,
-				764B042B80AE3D828A729A5E5B00B813 /* Frameworks */,
-				4B3E5CBC7D79E7D8177DBDBC44A8AEF9 /* Resources */,
-				D0A130A4FFE6A2A7B9ADC1E431CECF4B /* Support Files */,
+				8A85A8F8EAAA742B63C168A9548AC267 /* Assets.bundle */,
 			);
-			name = Intercom;
-			path = Intercom;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		241915F26AFFA975B09B995CB710B3CA /* Pods */ = {
+		1C261FF8F3950C2838C145690216D6E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04BB9F9044E7367DED5B2F333F8CD0A5 /* Intercom */,
-				354213A1AE876598925472E6FA6CBFF3 /* youtube-ios-player-helper */,
+				599409E342A22D45B9024ABB2138E903 /* Intercom.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		354213A1AE876598925472E6FA6CBFF3 /* youtube-ios-player-helper */ = {
+		2E5FD3E334C968DA531665A1829F376E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5BDD77EDBEF821A0126E3797AEFC47B8 /* YTPlayerView.h */,
-				258A1A308F4B2B45F3AEAAD1B8AAFF02 /* YTPlayerView.m */,
-				64E37BE842002D45E9A9F55A9B06F947 /* Resources */,
-				3C44E50E7E2B281DEE44CDD269BAFFF7 /* Support Files */,
+				431004C4F2CD4438B98D9FA83272DCC2 /* Intercom.bundle */,
+				28C06EEE794F1C760B9A0D0843A03710 /* IntercomTranslations.bundle */,
 			);
-			name = "youtube-ios-player-helper";
-			path = "youtube-ios-player-helper";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		3C44E50E7E2B281DEE44CDD269BAFFF7 /* Support Files */ = {
+		357FBA6E259F6F2B5CA0C42C048FFEB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BD9BCE4D95EA275CBC504060E64167E /* youtube-ios-player-helper.modulemap */,
-				B35E45263C2AFB66970CED1034B9BA59 /* youtube-ios-player-helper-dummy.m */,
-				7DD2B6552EC429AA89123F691A2A0BBC /* youtube-ios-player-helper-Info.plist */,
-				C6F32BF93A67B8812F5E1D9C65D2DDD9 /* youtube-ios-player-helper-prefix.pch */,
-				9FBD6E33112C5F8FC88BB1E1D5EF9DE4 /* youtube-ios-player-helper-umbrella.h */,
-				08F655C6FAAC1485690E6C341991D049 /* youtube-ios-player-helper.debug.xcconfig */,
-				0F45A53A8D70F6E3E2E8068AEB924EAE /* youtube-ios-player-helper.release.xcconfig */,
+				80814A9D7DD9514F84B3B13C8484237E /* OnboardKit.framework */,
+				B8587F9DC84DC2F2B76345A0F288F2E2 /* Pods_PokerApp1.framework */,
+				8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/youtube-ios-player-helper";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		421AB805606E43846CA3E17191EF6099 /* Pods-PokerApp1 */ = {
@@ -170,21 +187,55 @@
 			path = "Target Support Files/Pods-PokerApp1";
 			sourceTree = "<group>";
 		};
-		4B3E5CBC7D79E7D8177DBDBC44A8AEF9 /* Resources */ = {
+		4486E745DD250CB6883F4BA3D265BF45 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D90A58820BEF7BB791487A70E6E2126C /* Intercom.bundle */,
-				3FB53706EAAC6D06E68510A5E0257F61 /* IntercomTranslations.bundle */,
+				B86880FC178099E11DFEF79CCEE33E15 /* youtube-ios-player-helper.modulemap */,
+				045C03F9088E19BF03BAC26D25458A9B /* youtube-ios-player-helper-dummy.m */,
+				2073DDA980E798EF15FB28ACB9764519 /* youtube-ios-player-helper-Info.plist */,
+				EB226DCBAC32617D852190E114D985C6 /* youtube-ios-player-helper-prefix.pch */,
+				50A97ED3D3D60F896F477183FEB5A3FC /* youtube-ios-player-helper-umbrella.h */,
+				5AFB339E643D83C49F42CB0B1FCC4CC7 /* youtube-ios-player-helper.debug.xcconfig */,
+				EDEDC9B681A2723127E2FA2626A07C61 /* youtube-ios-player-helper.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
-		64E37BE842002D45E9A9F55A9B06F947 /* Resources */ = {
+		5700AA00984AD8C2647D8B5618A0F3C1 /* Intercom */ = {
 			isa = PBXGroup;
 			children = (
-				C895499B1A4C2C550C80C6E62CD0DCAF /* Assets.bundle */,
+				8A824EF2AAF5362E5069A983A1D84A9A /* ICMCompany.h */,
+				CBFF16AFE8B12EEC781B1C243AB6A3D7 /* ICMUserAttributes.h */,
+				BACCFF7522F1D86466D0C921782FEAA5 /* Intercom.h */,
+				1C261FF8F3950C2838C145690216D6E8 /* Frameworks */,
+				2E5FD3E334C968DA531665A1829F376E /* Resources */,
+				57B253D163860B44A6F81A9A05E16744 /* Support Files */,
 			);
-			name = Resources;
+			name = Intercom;
+			path = Intercom;
+			sourceTree = "<group>";
+		};
+		57B253D163860B44A6F81A9A05E16744 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				138E0A440090B0B338DCAADA9A2633FD /* Intercom.debug.xcconfig */,
+				6D7BE25E3443E95582801BE1250B684A /* Intercom.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Intercom";
+			sourceTree = "<group>";
+		};
+		6A41921B7C6004C8C4FB02591B0FCBC7 /* youtube-ios-player-helper */ = {
+			isa = PBXGroup;
+			children = (
+				5E955AA7A5410B8EA29F962ACD1F1A5D /* YTPlayerView.h */,
+				0972E4638B02FBB1DD3BB43B69AB7923 /* YTPlayerView.m */,
+				04285F7B705B05FF1823F8AF83200326 /* Resources */,
+				4486E745DD250CB6883F4BA3D265BF45 /* Support Files */,
+			);
+			name = "youtube-ios-player-helper";
+			path = "youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
 		6BF31F02C3E6A73E9E94CB4711E64A06 /* Targets Support Files */ = {
@@ -193,23 +244,6 @@
 				421AB805606E43846CA3E17191EF6099 /* Pods-PokerApp1 */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		764B042B80AE3D828A729A5E5B00B813 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				307B64CB2528FD223F8A2C6DF069DFFF /* Intercom.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CB575160CD931E724F4201C49B8D6FA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B8587F9DC84DC2F2B76345A0F288F2E2 /* Pods_PokerApp1.framework */,
-				8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -225,20 +259,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				241915F26AFFA975B09B995CB710B3CA /* Pods */,
-				9CB575160CD931E724F4201C49B8D6FA /* Products */,
+				DDE4B01B1256135AC77FA77019C1734B /* Pods */,
+				357FBA6E259F6F2B5CA0C42C048FFEB6 /* Products */,
 				6BF31F02C3E6A73E9E94CB4711E64A06 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0A130A4FFE6A2A7B9ADC1E431CECF4B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				137A3DAF5E8D0DAEC7BCEA13C23E1F1A /* Intercom.debug.xcconfig */,
-				DCECF13C12B963410D2FF93F64E259F1 /* Intercom.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Intercom";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -249,9 +273,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA26CD0D0CC07E63D162892217A7E440 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30E00FB11ED573440394A72F9A9FB61B /* OnboardKit.modulemap */,
+				DD8F3430EDDAD8D9DFD7DA3770894FAC /* OnboardKit-dummy.m */,
+				88512D14D3F1BF9E4BD55623518D630D /* OnboardKit-Info.plist */,
+				1F5B6EBB5BA74DF4ACD224CF87D2AADD /* OnboardKit-prefix.pch */,
+				63DF5C86ACA2D9F02AE7BAA52E34FD5F /* OnboardKit-umbrella.h */,
+				3F2A9F4CFF3E3F696B4C08FDEE8C4FFB /* OnboardKit.debug.xcconfig */,
+				660C51E58ABE80E8825FCF68335ABCBA /* OnboardKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OnboardKit";
+			sourceTree = "<group>";
+		};
+		DDE4B01B1256135AC77FA77019C1734B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5700AA00984AD8C2647D8B5618A0F3C1 /* Intercom */,
+				E671F95399B2070A23A2162EB976E863 /* OnboardKit */,
+				6A41921B7C6004C8C4FB02591B0FCBC7 /* youtube-ios-player-helper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E671F95399B2070A23A2162EB976E863 /* OnboardKit */ = {
+			isa = PBXGroup;
+			children = (
+				475E81090E09901DF639372ABC3BB60E /* OnboardPage.swift */,
+				61D06231D71A6CECB0665DBB5E2BBF70 /* OnboardPageViewController.swift */,
+				4EE165BE5F69CB24BD28BA7CD4CB9611 /* OnboardViewController.swift */,
+				DA26CD0D0CC07E63D162892217A7E440 /* Support Files */,
+			);
+			name = OnboardKit;
+			path = OnboardKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0ACAD1D504DA2DCDCA070B1AA4A3D78E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78ADE0245CA9551F72EED1172D240BD4 /* Pods-PokerApp1-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3D9B7803829D42680BA215A141625F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,11 +330,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B670BD3B9CB7A4308E8AC110047C94D0 /* Headers */ = {
+		D69E3CD90D0109BB5270C7C12B95EF1C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				932EAA3D3C25C2D382FBA975C544F3B6 /* Pods-PokerApp1-umbrella.h in Headers */,
+				5BBC76C1CCF62EEA27A17654457981CE /* OnboardKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,22 +343,41 @@
 /* Begin PBXNativeTarget section */
 		162097E367FF0E2D3937788F58D70B60 /* Pods-PokerApp1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB15E4BF8907E77B811487B88FA274EF /* Build configuration list for PBXNativeTarget "Pods-PokerApp1" */;
+			buildConfigurationList = A4CFB4C6BF574037BB58719A0C874B11 /* Build configuration list for PBXNativeTarget "Pods-PokerApp1" */;
 			buildPhases = (
-				B670BD3B9CB7A4308E8AC110047C94D0 /* Headers */,
-				8EEAE12ABA18BFE73D52E4911C0127C6 /* Sources */,
-				CF7309B1E45DF828B59EC24135321FE0 /* Frameworks */,
-				B8F86B1994506A87985B32B507FFCF9C /* Resources */,
+				0ACAD1D504DA2DCDCA070B1AA4A3D78E /* Headers */,
+				2C7DF73C0A8264E35D29AC7E7D14C2AC /* Sources */,
+				AE77F80042E3BEE5A59F03B157D5B32E /* Frameworks */,
+				2EEF6C0F78522A0AEB068439EE2C3FFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C4CD7D39C59DEB6F8E12671DE6A529B0 /* PBXTargetDependency */,
-				E47D15BB99516852F8888A6CA0A724B4 /* PBXTargetDependency */,
+				EABB9F391DA1C3904F8DF11E4E062758 /* PBXTargetDependency */,
+				706F557D605BFA32B1FED6EA6D6EECB0 /* PBXTargetDependency */,
+				E6C87C984A75294EB081B886221A6EBA /* PBXTargetDependency */,
 			);
 			name = "Pods-PokerApp1";
 			productName = "Pods-PokerApp1";
 			productReference = B8587F9DC84DC2F2B76345A0F288F2E2 /* Pods_PokerApp1.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6621189B26743A496AB5226EBAE0FB1E /* OnboardKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD20ECA756AC6D2B8B65623D81BC04F4 /* Build configuration list for PBXNativeTarget "OnboardKit" */;
+			buildPhases = (
+				D69E3CD90D0109BB5270C7C12B95EF1C /* Headers */,
+				E09C8BEB9A69C483E8E7F27768D9A1BF /* Sources */,
+				722C5473DEA2FE647BEE4EB20E65E55F /* Frameworks */,
+				39F1E75AAB65117DB60D66FD5E36F89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnboardKit;
+			productName = OnboardKit;
+			productReference = 80814A9D7DD9514F84B3B13C8484237E /* OnboardKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */ = {
@@ -320,7 +408,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -328,11 +416,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9CB575160CD931E724F4201C49B8D6FA /* Products */;
+			productRefGroup = 357FBA6E259F6F2B5CA0C42C048FFEB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5563F7D95AD712211C69747B8DCD2168 /* Intercom */,
+				6621189B26743A496AB5226EBAE0FB1E /* OnboardKit */,
 				162097E367FF0E2D3937788F58D70B60 /* Pods-PokerApp1 */,
 				D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */,
 			);
@@ -340,18 +429,25 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2EEF6C0F78522A0AEB068439EE2C3FFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39F1E75AAB65117DB60D66FD5E36F89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D870BFFEC56FA6BCB0BD3F7C619A53D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A8C22822FA929E89335F959F79BD29D2 /* Assets.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8F86B1994506A87985B32B507FFCF9C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,28 +463,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EEAE12ABA18BFE73D52E4911C0127C6 /* Sources */ = {
+		2C7DF73C0A8264E35D29AC7E7D14C2AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B6F2D50CE48D4674F332F6FD5B6E44 /* Pods-PokerApp1-dummy.m in Sources */,
+				1A65627F6801E5B99CB551E4FAEF43F1 /* Pods-PokerApp1-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09C8BEB9A69C483E8E7F27768D9A1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F740F29A5655FB3ED7343D70DD09556 /* OnboardKit-dummy.m in Sources */,
+				DE8F14512EF9022D9CEBB994104DD502 /* OnboardPage.swift in Sources */,
+				B135E8EBD6FF8DEF1BC15C5E23A568A3 /* OnboardPageViewController.swift in Sources */,
+				1C8ADDA52AF95C5855B299458D03CD2E /* OnboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C4CD7D39C59DEB6F8E12671DE6A529B0 /* PBXTargetDependency */ = {
+		706F557D605BFA32B1FED6EA6D6EECB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Intercom;
-			target = 5563F7D95AD712211C69747B8DCD2168 /* Intercom */;
-			targetProxy = 49102EFA1E23F6F73AED42926DD63466 /* PBXContainerItemProxy */;
+			name = OnboardKit;
+			target = 6621189B26743A496AB5226EBAE0FB1E /* OnboardKit */;
+			targetProxy = 648740FC4B2E2E575B71ADAD22D68214 /* PBXContainerItemProxy */;
 		};
-		E47D15BB99516852F8888A6CA0A724B4 /* PBXTargetDependency */ = {
+		E6C87C984A75294EB081B886221A6EBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "youtube-ios-player-helper";
 			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
-			targetProxy = 33F2CB95673BF9B096F62097FABF8FBA /* PBXContainerItemProxy */;
+			targetProxy = 4941FE94418C2E3FA5871A7D6C80CD88 /* PBXContainerItemProxy */;
+		};
+		EABB9F391DA1C3904F8DF11E4E062758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Intercom;
+			target = 5563F7D95AD712211C69747B8DCD2168 /* Intercom */;
+			targetProxy = 3FF0074BD7BAE947EF60C936B0D69A68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -457,7 +570,115 @@
 			};
 			name = Debug;
 		};
-		26C540D6FE4C209A6E772D0D94616B6E /* Release */ = {
+		2B7AF102699C1B2EA5A27DD3DDA7058F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7BE25E3443E95582801BE1250B684A /* Intercom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CA3409B7E9239F0054A01150FDCD0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2A9F4CFF3E3F696B4C08FDEE8C4FFB /* OnboardKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OnboardKit/OnboardKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OnboardKit/OnboardKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OnboardKit/OnboardKit.modulemap";
+				PRODUCT_MODULE_NAME = OnboardKit;
+				PRODUCT_NAME = OnboardKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76AAE0CFC8E706EE15748E54A5E1B8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138E0A440090B0B338DCAADA9A2633FD /* Intercom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9665913C62545262DB9DB878A3A09327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 660C51E58ABE80E8825FCF68335ABCBA /* OnboardKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OnboardKit/OnboardKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OnboardKit/OnboardKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OnboardKit/OnboardKit.modulemap";
+				PRODUCT_MODULE_NAME = OnboardKit;
+				PRODUCT_NAME = OnboardKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D96DCFE00D5B6164FC2AFC893E5713A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53F534B87FA1389F0D8050B7C2D18057 /* Pods-PokerApp1.release.xcconfig */;
 			buildSettings = {
@@ -496,82 +717,9 @@
 			};
 			name = Release;
 		};
-		2B7AF102699C1B2EA5A27DD3DDA7058F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCECF13C12B963410D2FF93F64E259F1 /* Intercom.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		69D603E227F8C2FC132422B93507AF50 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 429A1C0B852F68750461232891F659F1 /* Pods-PokerApp1.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PokerApp1/Pods-PokerApp1-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PokerApp1/Pods-PokerApp1.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		76AAE0CFC8E706EE15748E54A5E1B8E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 137A3DAF5E8D0DAEC7BCEA13C23E1F1A /* Intercom.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		E7BA62901D3C00033E85D2E6CB389868 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08F655C6FAAC1485690E6C341991D049 /* youtube-ios-player-helper.debug.xcconfig */;
+			baseConfigurationReference = 5AFB339E643D83C49F42CB0B1FCC4CC7 /* youtube-ios-player-helper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -667,7 +815,7 @@
 		};
 		F9477447C515D9F142B9806AECE5438C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F45A53A8D70F6E3E2E8068AEB924EAE /* youtube-ios-player-helper.release.xcconfig */;
+			baseConfigurationReference = EDEDC9B681A2723127E2FA2626A07C61 /* youtube-ios-player-helper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -702,6 +850,44 @@
 			};
 			name = Release;
 		};
+		FF031E5EDF70A403C45194FBD62C2D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429A1C0B852F68750461232891F659F1 /* Pods-PokerApp1.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PokerApp1/Pods-PokerApp1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PokerApp1/Pods-PokerApp1.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -732,11 +918,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB15E4BF8907E77B811487B88FA274EF /* Build configuration list for PBXNativeTarget "Pods-PokerApp1" */ = {
+		A4CFB4C6BF574037BB58719A0C874B11 /* Build configuration list for PBXNativeTarget "Pods-PokerApp1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				69D603E227F8C2FC132422B93507AF50 /* Debug */,
-				26C540D6FE4C209A6E772D0D94616B6E /* Release */,
+				FF031E5EDF70A403C45194FBD62C2D0A /* Debug */,
+				D96DCFE00D5B6164FC2AFC893E5713A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD20ECA756AC6D2B8B65623D81BC04F4 /* Build configuration list for PBXNativeTarget "OnboardKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA3409B7E9239F0054A01150FDCD0C0 /* Debug */,
+				9665913C62545262DB9DB878A3A09327 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

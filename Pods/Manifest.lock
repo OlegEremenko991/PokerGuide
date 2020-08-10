@@ -1,20 +1,24 @@
 PODS:
   - Intercom (7.1.1)
+  - OnboardKit (1.5.0)
   - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
   - Intercom
+  - OnboardKit
   - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
     - Intercom
+    - OnboardKit
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   Intercom: 4c1d90a1eacd7068943cb16a6506fc6ef326144b
+  OnboardKit: 73a4e9c9a1ae88afee0514ac3f2bc4f82126b66e
   youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: fa9d07473f379535cba72f7772c7d340e51a57c4
+PODFILE CHECKSUM: 398335251c4c4e7e83951dbef0fbbfd4629b6f59
 
 COCOAPODS: 1.9.1

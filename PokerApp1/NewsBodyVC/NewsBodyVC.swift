@@ -14,10 +14,14 @@ class NewsBodyVC: UIViewController {
     @IBOutlet weak var newsTitleLabel: UILabel!
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var newsBodyLabel: UILabel!
-    
     @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var newsDateLabel: UILabel!
+    @IBOutlet weak var newsAuthorLabel: UILabel!
+    
     var newsImageName = ""
     var newsTitle = ""
+    var newsAuthor = ""
+    var newsDate = ""
     var newsBody = ""
     
     override func viewDidLoad() {
@@ -35,7 +39,10 @@ class NewsBodyVC: UIViewController {
     private func setupView(){
         newsBodyLabel.text = newsBody
         newsImageView.image = UIImage(named: newsImageName)
+        newsImageView.backgroundColor = .black
         newsTitleLabel.text = newsTitle
+        newsDateLabel.text = newsDate
+        newsAuthorLabel.text = newsAuthor
         infoView.layer.cornerRadius = 25
         infoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         infoView.clipsToBounds = true

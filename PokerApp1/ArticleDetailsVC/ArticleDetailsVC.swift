@@ -12,12 +12,14 @@ class ArticleDetailsVC: UIViewController {
 
     @IBOutlet weak var articleImageView: UIImageView!
     @IBOutlet weak var articleTitleLabel: UILabel!
+    @IBOutlet weak var articleAuthorLabel: UILabel!
     @IBOutlet weak var articleBodyLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var infoView: UIView!
     
     var articleImageName = ""
     var articleTitle = ""
+    var articleAuthor = ""
     var articleBody = ""
     
     override func viewDidLoad() {
@@ -34,8 +36,10 @@ class ArticleDetailsVC: UIViewController {
     
     private func setupView(){
         articleImageView.image = UIImage(named: articleImageName)
+        articleImageView.backgroundColor = .black
         articleTitleLabel.text = articleTitle
         articleBodyLabel.text = articleBody
+        articleAuthorLabel.text = articleAuthor
         backButton.roundedWithBackground()
         infoView.layer.cornerRadius = 25
         infoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
