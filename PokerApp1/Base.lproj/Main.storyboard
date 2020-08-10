@@ -120,7 +120,7 @@
         <!--News BodyVC-->
         <scene sceneID="mlr-yz-g8p">
             <objects>
-                <viewController storyboardIdentifier="NewsBodyVC" id="Oqu-0T-wsb" customClass="NewsBodyVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsBodyVC" hidesBottomBarWhenPushed="YES" id="Oqu-0T-wsb" customClass="NewsBodyVC" customModule="Poker_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rIf-D7-9GU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -474,6 +474,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="CIB-y2-NsX" kind="relationship" relationship="viewControllers" id="8KT-WL-6na"/>
@@ -732,6 +734,7 @@
             <point key="canvasLocation" x="1000" y="1952"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="Articles" width="23" height="23"/>
         <image name="Chat" width="23" height="23"/>

@@ -18,11 +18,15 @@ class MoreVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     // MARK: Set email to send feedback
     
-    let devEmail = "support@pokerApp1.com"
+    let devEmail = "support@pokerguides.com"
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let buttons = [feedbackButton, bugButton, rateButton]
+        for button in buttons {
+            button?.customRoundedStyle()
+        }
         // Do any additional setup after loading the view.
     }
     
