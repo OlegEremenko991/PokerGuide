@@ -27,6 +27,7 @@ class MoreVC: UIViewController, MFMailComposeViewControllerDelegate {
         for button in buttons {
             button?.customRoundedStyle()
         }
+        
         // Do any additional setup after loading the view.
     }
     

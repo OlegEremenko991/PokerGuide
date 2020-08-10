@@ -22,8 +22,7 @@ extension UIButton {
     func customRoundedStyle(){
         self.backgroundColor = .black
         self.setTitleColor(.white, for: .normal)
-        self.layer.cornerRadius = 10
-        self.setTitleColor(.gray, for: .disabled)
+        self.layer.cornerRadius = 24
     }
 
 }

@@ -684,24 +684,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="8Wv-La-4BJ">
-                                <rect key="frame" x="132" y="353" width="150" height="190"/>
+                                <rect key="frame" x="116" y="326" width="182" height="244"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRe-5v-CdH">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="tCY-aN-VH4"/>
+                                        </constraints>
                                         <state key="normal" title="Leave feedback"/>
                                         <connections>
                                             <action selector="feedbackTapped:" destination="xxl-sf-9Gf" eventType="touchUpInside" id="RFk-Pa-zHl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8S-OZ-tf7">
-                                        <rect key="frame" x="0.0" y="80" width="150" height="30"/>
+                                        <rect key="frame" x="0.0" y="98" width="182" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="aGl-HL-h87"/>
+                                        </constraints>
                                         <state key="normal" title="Report a bug"/>
                                         <connections>
                                             <action selector="bugTapped:" destination="xxl-sf-9Gf" eventType="touchUpInside" id="Acl-KE-NK8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sk-dh-rMu">
-                                        <rect key="frame" x="0.0" y="160" width="150" height="30"/>
+                                        <rect key="frame" x="0.0" y="196" width="182" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="2a8-oX-Jmd"/>
+                                        </constraints>
                                         <state key="normal" title="Rate the app"/>
                                         <connections>
                                             <action selector="rateTapped:" destination="xxl-sf-9Gf" eventType="touchUpInside" id="50z-nL-qfE"/>
@@ -709,7 +718,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="AKh-8H-Nae"/>
+                                    <constraint firstAttribute="width" constant="182" id="AKh-8H-Nae"/>
                                 </constraints>
                             </stackView>
                         </subviews>
