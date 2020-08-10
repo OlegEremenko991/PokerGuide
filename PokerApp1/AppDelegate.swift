@@ -9,8 +9,8 @@
 import UIKit
 import Intercom
 
-let INTERCOM_APP_ID = "btbq1gm2"
-let INTERCOM_API_KEY = "ios_sdk-e7ab13b9da8df915f2e00aa4b16a90e06501b0d1"
+let INTERCOM_APP_ID = "zsdudkbn"
+let INTERCOM_API_KEY = "ios_sdk-015c849a6fbe188b3edad0c60ae1244414493e90"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
