@@ -12,7 +12,11 @@ class OnboardingUDcheck {
     
     static let shared = OnboardingUDcheck()
     
+// MARK: Private properties
+    
     private let key1 = "isNewUser"
+    
+// MARK: Public methods
     
     func isNewUser() -> Bool {
         return !UserDefaults.standard.bool(forKey: key1)

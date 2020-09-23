@@ -9,10 +9,14 @@
 import Foundation
 
 public class DataLoader {
-        
+       
+// MARK: Public properties
+    
     var news = [News]()
     var articles = [Article]()
     var videos = [Video]()
+    
+// MARK: Init
     
     init() {
         loadNews()
@@ -21,8 +25,9 @@ public class DataLoader {
         sort()
     }
     
-    func loadNews() {
+// MARK: Private methods
 
+    private func loadNews() {
         if let fileLocation = Bundle.main.url(forResource: "News", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileLocation)
@@ -35,8 +40,7 @@ public class DataLoader {
         }
     }
 
-    func loadArticles() {
-
+    private func loadArticles() {
         if let fileLocation = Bundle.main.url(forResource: "Articles", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileLocation)
@@ -49,8 +53,7 @@ public class DataLoader {
         }
     }
     
-    func loadVideos() {
-
+    private func loadVideos() {
         if let fileLocation = Bundle.main.url(forResource: "Videos", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileLocation)
@@ -63,7 +66,7 @@ public class DataLoader {
         }
     }
     
-    func sort() {
+    private func sort() {
         self.news = self.news.sorted(by: { $0.id < $1.id })
         self.articles = self.articles.sorted(by: { $0.id < $1.id })
         self.videos = self.videos.sorted(by: { $0.id < $1.id })

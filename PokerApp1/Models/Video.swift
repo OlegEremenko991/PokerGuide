@@ -14,5 +14,4 @@ struct Video: Codable {
     var imageName: String
     var previewImage: String
     var videoID: String
-    var videoLink: String
 }

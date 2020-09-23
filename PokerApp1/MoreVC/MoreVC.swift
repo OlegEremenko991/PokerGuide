@@ -10,39 +10,32 @@ import UIKit
 import StoreKit
 import MessageUI
 
-class MoreVC: UIViewController, MFMailComposeViewControllerDelegate {
+final class MoreVC: UIViewController {
 
+// MARK: IBOutlets
+    
     @IBOutlet weak var feedbackButton: UIButton!
     @IBOutlet weak var bugButton: UIButton!
     @IBOutlet weak var rateButton: UIButton!
     
-    // MARK: Set email to send feedback
+// MARK: Private properties
     
-    let devEmail = "support@pokerguides.com"
+    private let devEmail = "support@pokerguides.com"
+    
+// MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupButtons()
+    }
+    
+// MARK: Private methods
+    
+    private func setupButtons() {
         let buttons = [feedbackButton, bugButton, rateButton]
         for button in buttons {
             button?.customRoundedStyle()
         }
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func feedbackTapped(_ sender: UIButton) {
-        let subject = "Feedback to app developers"
-        sendEmail(subject: subject)
-    }
-    
-    @IBAction func bugTapped(_ sender: UIButton) {
-        let subject = "Report a problem in app"
-        sendEmail(subject: subject)
-    }
-    
-    @IBAction func rateTapped(_ sender: UIButton) {
-        rateApp()
     }
     
     private func sendEmail(subject: String) {
@@ -57,14 +50,33 @@ class MoreVC: UIViewController, MFMailComposeViewControllerDelegate {
             print("error")
         }
     }
-    func mailComposeController(_ controller: MFMailComposeViewController,didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true)
-    }
-    
-// MARK: Native iOS pop-up to rate the app
     
     private func rateApp() {
         SKStoreReviewController.requestReview()
     }
     
+// MARK: IBActions
+
+    @IBAction func feedbackTapped(_ sender: UIButton) {
+        let subject = "Feedback to app developers"
+        sendEmail(subject: subject)
+    }
+    
+    @IBAction func bugTapped(_ sender: UIButton) {
+        let subject = "Report a problem in app"
+        sendEmail(subject: subject)
+    }
+    
+    @IBAction func rateTapped(_ sender: UIButton) {
+        rateApp()
+    }
+    
+}
+
+// MARK: MFMailComposeViewControllerDelegate
+
+extension MoreVC: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController,didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
 }

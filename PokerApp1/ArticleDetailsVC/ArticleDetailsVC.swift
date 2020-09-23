@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ArticleDetailsVC: UIViewController {
+final class ArticleDetailsVC: UIViewController {
+
+// MARK: IBOutlets
 
     @IBOutlet weak var articleImageView: UIImageView!
     @IBOutlet weak var articleTitleLabel: UILabel!
@@ -17,45 +19,53 @@ class ArticleDetailsVC: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var infoView: UIView!
     
+// MARK: Public properties
+
     var articleImageName = ""
     var articleTitle = ""
     var articleAuthor = ""
     var articleBody = ""
     
+// MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
-    
-    // MARK: Back button
-    
-    @IBAction func backButtonTapped(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    private func setupView(){
-        articleImageView.image = UIImage(named: articleImageName)
-        articleImageView.backgroundColor = .black
-        articleTitleLabel.text = articleTitle
-        articleBodyLabel.text = articleBody
-        articleAuthorLabel.text = articleAuthor
-        backButton.roundedWithBackground()
-        infoView.layer.cornerRadius = 25
-        infoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        infoView.clipsToBounds = true
-    }
-    
-    // MARK: Hide nav bar
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true) // Hide navigation bar
+    }
+    
+// MARK: Private methods
+    
+    private func setupView(){
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
+        articleImageView.image = UIImage(named: articleImageName)
+        articleImageView.backgroundColor = .black
+        
+        articleTitleLabel.text = articleTitle
+        articleBodyLabel.text = articleBody
+        articleAuthorLabel.text = articleAuthor
+        
+        infoView.layer.cornerRadius = 25
+        infoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        infoView.clipsToBounds = true
+        
+        backButton.roundedWithBackground()
+    }
+    
+// MARK: IBActions
+
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
 }
 
-// MARK: Enable swipe to go back
+// MARK: UIGestureRecognizerDelegate - enable swipe to go back
 
 extension ArticleDetailsVC: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {

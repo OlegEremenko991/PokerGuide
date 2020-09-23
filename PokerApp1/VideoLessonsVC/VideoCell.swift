@@ -10,10 +10,14 @@ import UIKit
 
 class VideoCell: UITableViewCell {
 
+// MARK: IBOutlets
+    
     @IBOutlet weak var backView2: UIView!
     @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var previewTitleLabel: UILabel!
     
+// MARK: Lifecycle
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
@@ -26,8 +30,8 @@ class VideoCell: UITableViewCell {
         selectedBackgroundView?.backgroundColor = .lightGray
     }
 
-    // MARK: Setup view
-    
+// MARK: Private methods
+
     private func setupView(){
         contentView.layer.cornerRadius = 10
         previewImageView.layer.cornerRadius = 10

@@ -11,6 +11,7 @@ import UIKit
 extension UILabel {
     
     // Custom background for labels
+    
     func setCustomBackground(){
         self.backgroundColor = UIColor(white: 1, alpha: 0.8)
         self.layer.masksToBounds = true

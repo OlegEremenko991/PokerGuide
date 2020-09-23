@@ -86,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6708662A251BE830006F8606 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				671D686624DBE3CB004FDEAC /* AppDelegate.swift */,
+				671D686824DBE3CB004FDEAC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		671D685A24DBE3CB004FDEAC = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +116,7 @@
 		671D686524DBE3CB004FDEAC /* PokerApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				6708662A251BE830006F8606 /* App */,
 				671D689724DC6E93004FDEAC /* Support */,
 				671D689624DC6E8A004FDEAC /* Models */,
 				671D687D24DBF451004FDEAC /* NewsVC */,
@@ -118,8 +128,6 @@
 				671D689024DBF520004FDEAC /* IntercomVC */,
 				671D689324DBF537004FDEAC /* MoreVC */,
 				671D687C24DBE5F0004FDEAC /* JSON */,
-				671D686624DBE3CB004FDEAC /* AppDelegate.swift */,
-				671D686824DBE3CB004FDEAC /* SceneDelegate.swift */,
 				671D686C24DBE3CB004FDEAC /* Main.storyboard */,
 				671D686F24DBE3D0004FDEAC /* Assets.xcassets */,
 				671D687124DBE3D0004FDEAC /* LaunchScreen.storyboard */,

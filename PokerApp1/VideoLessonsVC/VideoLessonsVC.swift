@@ -8,20 +8,26 @@
 
 import UIKit
 
-class VideoLessonsVC: UIViewController {
+final class VideoLessonsVC: UIViewController {
 
+// MARK: IBOutlets
+    
     @IBOutlet weak var tableView: UITableView!
-    let videoCellID = "VideoCellID"
-    let videosData = DataLoader().videos
+    
+// MARK: Private properties
+    
+    private let videoCellID = "VideoCellID"
+    private let videosData = DataLoader().videos
+    
+// MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
 
 }
+
+// MARK: TableView DataSource and Delegate
 
 extension VideoLessonsVC: UITableViewDataSource, UITableViewDelegate {
     
@@ -44,12 +50,13 @@ extension VideoLessonsVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // MARK: Set cell as selected
+        // Set cell as selected
         
         let videoCell = tableView.dequeueReusableCell(withIdentifier: videoCellID) as! VideoCell
         videoCell.isSelected = true
         
-        // MARK: Prepare data for PlayVideoVC
+        // Prepare data for PlayVideoVC
+        
         guard let targetVC = storyboard?.instantiateViewController(withIdentifier: "PlayVideoVC") as? PlayVideoVC else { return }
         
         let video = videosData[indexPath.row]

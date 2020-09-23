@@ -10,11 +10,15 @@ import UIKit
 
 class ArticleCell: UITableViewCell {
 
+// MARK: IBOutlets
+
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var articleAuthorLabel: UILabel!
     @IBOutlet weak var backView2: UIView!
     @IBOutlet weak var articleImageView: UIImageView!
     
+// MARK: Lifecycle
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
@@ -27,9 +31,13 @@ class ArticleCell: UITableViewCell {
         selectedBackgroundView?.backgroundColor = .lightGray
     }
     
+// MARK: Private methods
+
     private func setupView(){
         contentView.layer.cornerRadius = 10
+
         articleImageView.layer.cornerRadius = 10
+        
         backView2.layer.cornerRadius = 10
         backView2.addShadow(width: 1.0, height: 2.0)
     }
