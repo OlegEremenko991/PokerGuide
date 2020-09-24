@@ -1,5 +1,8 @@
 # PokerGuide
-A small side-project to practice working with tableviews and JSON.
+A small side-project for some practice:
+1. Working with tableviews and JSON
+2. Loading videos from youtube
+3. Scrollview
 
 ## Demo
 
