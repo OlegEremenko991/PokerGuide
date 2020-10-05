@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class DataLoader {
+public final class DataLoader {
        
 // MARK: Public properties
     
@@ -16,7 +16,7 @@ public class DataLoader {
     var articles = [Article]()
     var videos = [Video]()
     
-// MARK: Init
+// MARK: Lifecycle
     
     init() {
         loadNews()

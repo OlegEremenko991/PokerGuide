@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ArticleCell: UITableViewCell {
+final class ArticleCell: UITableViewCell {
 
 // MARK: IBOutlets
 

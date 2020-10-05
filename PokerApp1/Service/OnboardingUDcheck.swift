@@ -8,7 +8,7 @@
 
 import Foundation
 
-class OnboardingUDcheck {
+public final class OnboardingUDcheck {
     
     static let shared = OnboardingUDcheck()
     
