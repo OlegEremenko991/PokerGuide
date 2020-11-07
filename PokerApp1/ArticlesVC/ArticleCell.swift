@@ -17,6 +17,10 @@ final class ArticleCell: UITableViewCell {
     @IBOutlet private weak var backView2: UIView!
     @IBOutlet private weak var articleImageView: UIImageView!
     
+// MARK: Public properties
+    
+    static let cellID = "ArticleCellID"
+    
 // MARK: Lifecycle
 
     override func awakeFromNib() {

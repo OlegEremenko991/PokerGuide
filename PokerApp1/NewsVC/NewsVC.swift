@@ -17,7 +17,6 @@ final class NewsVC: UIViewController {
     
 // MARK: Private properties
 
-    private let newsCellID = "NewsCellID"
     private let newsData = DataLoader().news
     private var onboardingPages: [OnboardPage] {
         let pageOne = OnboardPage(title: "Check out poker news", imageName: "page1", description: "Everything you need to know about WSOP is here!")
@@ -72,7 +71,7 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let newsCell = tableView.dequeueReusableCell(withIdentifier: newsCellID) as! NewsCell
+        let newsCell = tableView.dequeueReusableCell(withIdentifier: NewsCell.cellID) as! NewsCell
         let news = newsData[indexPath.row]
         newsCell.setupCellWith(title: news.title,
                                date: news.date,
@@ -85,7 +84,7 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
         
         // Set cell as selected
 
-        let newsCell = tableView.dequeueReusableCell(withIdentifier: newsCellID) as! NewsCell
+        let newsCell = tableView.dequeueReusableCell(withIdentifier: NewsCell.cellID) as! NewsCell
         newsCell.isSelected = true
         
         // Prepare data for NewsBodyVC

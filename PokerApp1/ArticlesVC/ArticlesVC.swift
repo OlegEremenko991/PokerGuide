@@ -16,7 +16,6 @@ final class ArticlesVC: UIViewController {
     
 // MARK: Private properties
 
-    private let articleCellID = "ArticleCellID"
     private let articlesData = DataLoader().articles
     
 // MARK: Lifecycle
@@ -46,7 +45,7 @@ extension ArticlesVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let articleCell = tableView.dequeueReusableCell(withIdentifier: articleCellID) as! ArticleCell
+        let articleCell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.cellID) as! ArticleCell
         let article = articlesData[indexPath.row]
         articleCell.setupCellWith(title: article.title,
                                   author: article.author,
@@ -58,7 +57,7 @@ extension ArticlesVC: UITableViewDataSource, UITableViewDelegate {
        
         // Set cell as selected
 
-        let articleCell = tableView.dequeueReusableCell(withIdentifier: articleCellID) as! ArticleCell
+        let articleCell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.cellID) as! ArticleCell
         articleCell.isSelected = true
         
         // Prepare data for ArticleDetailsVC

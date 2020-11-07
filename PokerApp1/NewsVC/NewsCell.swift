@@ -18,6 +18,10 @@ final class NewsCell: UITableViewCell {
     @IBOutlet private weak var newsImageView: UIImageView!
     @IBOutlet private weak var backView2: UIView!
     
+// MARK: Public properties
+    
+    static let cellID = "NewsCellID"
+    
 // MARK: Lifecycle
     
     override func awakeFromNib() {
