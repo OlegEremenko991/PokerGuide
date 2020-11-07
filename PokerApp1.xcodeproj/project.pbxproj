@@ -28,14 +28,14 @@
 		671D689B24DC6EA4004FDEAC /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689A24DC6EA4004FDEAC /* News.swift */; };
 		671D689D24DC6F24004FDEAC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689C24DC6F24004FDEAC /* Article.swift */; };
 		671D689F24DC6F2A004FDEAC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689E24DC6F2A004FDEAC /* Video.swift */; };
-		671D68A124DC74D0004FDEAC /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A024DC74D0004FDEAC /* UIView_Extension.swift */; };
+		671D68A124DC74D0004FDEAC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A024DC74D0004FDEAC /* UIView+Extension.swift */; };
 		671D68A424DC772C004FDEAC /* NewsBodyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A324DC772C004FDEAC /* NewsBodyVC.swift */; };
 		671D68A624DD302E004FDEAC /* Articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 671D68A524DD302E004FDEAC /* Articles.json */; };
-		671D68A824DD7672004FDEAC /* UIButton_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A724DD7672004FDEAC /* UIButton_Extension.swift */; };
-		671D68AA24DD76F7004FDEAC /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */; };
-		671D68AC24DD7710004FDEAC /* UILabel_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */; };
+		671D68A824DD7672004FDEAC /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A724DD7672004FDEAC /* UIButton+Extension.swift */; };
+		671D68AA24DD76F7004FDEAC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68A924DD76F7004FDEAC /* UIColor+Extension.swift */; };
+		671D68AC24DD7710004FDEAC /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68AB24DD7710004FDEAC /* UILabel+Extension.swift */; };
 		671D68AE24DDC30C004FDEAC /* Videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 671D68AD24DDC30C004FDEAC /* Videos.json */; };
-		671D68B024DDCF77004FDEAC /* OnboardingUDcheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D68AF24DDCF77004FDEAC /* OnboardingUDcheck.swift */; };
+		67BF30702556FBCF007E94CF /* OnboardingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BF306F2556FBCF007E94CF /* OnboardingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,14 +63,14 @@
 		671D689A24DC6EA4004FDEAC /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		671D689C24DC6F24004FDEAC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		671D689E24DC6F2A004FDEAC /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		671D68A024DC74D0004FDEAC /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
+		671D68A024DC74D0004FDEAC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		671D68A324DC772C004FDEAC /* NewsBodyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBodyVC.swift; sourceTree = "<group>"; };
 		671D68A524DD302E004FDEAC /* Articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Articles.json; sourceTree = "<group>"; };
-		671D68A724DD7672004FDEAC /* UIButton_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Extension.swift; sourceTree = "<group>"; };
-		671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
-		671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel_Extension.swift; sourceTree = "<group>"; };
+		671D68A724DD7672004FDEAC /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		671D68A924DD76F7004FDEAC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		671D68AB24DD7710004FDEAC /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		671D68AD24DDC30C004FDEAC /* Videos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Videos.json; sourceTree = "<group>"; };
-		671D68AF24DDCF77004FDEAC /* OnboardingUDcheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUDcheck.swift; sourceTree = "<group>"; };
+		67BF306F2556FBCF007E94CF /* OnboardingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingService.swift; sourceTree = "<group>"; };
 		E5FFD43C20D18EC59112BE05 /* Pods-PokerApp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerApp1.debug.xcconfig"; path = "Target Support Files/Pods-PokerApp1/Pods-PokerApp1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,19 +116,13 @@
 		671D686524DBE3CB004FDEAC /* PokerApp1 */ = {
 			isa = PBXGroup;
 			children = (
-				6780C5F1252B66EE00018C63 /* Service */,
+				67BF30762556FEED007E94CF /* Cells */,
+				67BF30752556FEA2007E94CF /* ViewControllers */,
+				6780C5F1252B66EE00018C63 /* Services */,
 				6780C5F0252B66DE00018C63 /* Storyboard */,
 				6708662A251BE830006F8606 /* App */,
 				671D689724DC6E93004FDEAC /* Extensions */,
 				671D689624DC6E8A004FDEAC /* Models */,
-				671D687D24DBF451004FDEAC /* NewsVC */,
-				671D68A224DC7712004FDEAC /* NewsBodyVC */,
-				671D688024DBF471004FDEAC /* ArticlesVC */,
-				671D688124DBF480004FDEAC /* ArticleDetailsVC */,
-				671D688424DBF4A4004FDEAC /* VideoLessonsVC */,
-				671D688724DBF4CB004FDEAC /* PlayVideoVC */,
-				671D689024DBF520004FDEAC /* IntercomVC */,
-				671D689324DBF537004FDEAC /* MoreVC */,
 				671D687C24DBE5F0004FDEAC /* JSON */,
 				671D686F24DBE3D0004FDEAC /* Assets.xcassets */,
 				671D687424DBE3D0004FDEAC /* Info.plist */,
@@ -146,65 +140,6 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		671D687D24DBF451004FDEAC /* NewsVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D686A24DBE3CB004FDEAC /* NewsVC.swift */,
-				671D688E24DBF518004FDEAC /* NewsCell.swift */,
-			);
-			path = NewsVC;
-			sourceTree = "<group>";
-		};
-		671D688024DBF471004FDEAC /* ArticlesVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D687E24DBF46E004FDEAC /* ArticlesVC.swift */,
-				671D688C24DBF506004FDEAC /* ArticleCell.swift */,
-			);
-			path = ArticlesVC;
-			sourceTree = "<group>";
-		};
-		671D688124DBF480004FDEAC /* ArticleDetailsVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D688224DBF49E004FDEAC /* ArticleDetailsVC.swift */,
-			);
-			path = ArticleDetailsVC;
-			sourceTree = "<group>";
-		};
-		671D688424DBF4A4004FDEAC /* VideoLessonsVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D688524DBF4BF004FDEAC /* VideoLessonsVC.swift */,
-				671D688A24DBF4F2004FDEAC /* VideoCell.swift */,
-			);
-			path = VideoLessonsVC;
-			sourceTree = "<group>";
-		};
-		671D688724DBF4CB004FDEAC /* PlayVideoVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D688824DBF4E2004FDEAC /* PlayVideoVC.swift */,
-			);
-			path = PlayVideoVC;
-			sourceTree = "<group>";
-		};
-		671D689024DBF520004FDEAC /* IntercomVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D689124DBF533004FDEAC /* IntercomVC.swift */,
-			);
-			path = IntercomVC;
-			sourceTree = "<group>";
-		};
-		671D689324DBF537004FDEAC /* MoreVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D689424DBF547004FDEAC /* MoreVC.swift */,
-			);
-			path = MoreVC;
-			sourceTree = "<group>";
-		};
 		671D689624DC6E8A004FDEAC /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,20 +153,12 @@
 		671D689724DC6E93004FDEAC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				671D68A024DC74D0004FDEAC /* UIView_Extension.swift */,
-				671D68A724DD7672004FDEAC /* UIButton_Extension.swift */,
-				671D68A924DD76F7004FDEAC /* UIColor_Extension.swift */,
-				671D68AB24DD7710004FDEAC /* UILabel_Extension.swift */,
+				671D68A024DC74D0004FDEAC /* UIView+Extension.swift */,
+				671D68A724DD7672004FDEAC /* UIButton+Extension.swift */,
+				671D68A924DD76F7004FDEAC /* UIColor+Extension.swift */,
+				671D68AB24DD7710004FDEAC /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		671D68A224DC7712004FDEAC /* NewsBodyVC */ = {
-			isa = PBXGroup;
-			children = (
-				671D68A324DC772C004FDEAC /* NewsBodyVC.swift */,
-			);
-			path = NewsBodyVC;
 			sourceTree = "<group>";
 		};
 		6780C5F0252B66DE00018C63 /* Storyboard */ = {
@@ -243,13 +170,38 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		6780C5F1252B66EE00018C63 /* Service */ = {
+		6780C5F1252B66EE00018C63 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				671D689824DC6E9E004FDEAC /* DataLoader.swift */,
-				671D68AF24DDCF77004FDEAC /* OnboardingUDcheck.swift */,
+				67BF306F2556FBCF007E94CF /* OnboardingService.swift */,
 			);
-			path = Service;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67BF30752556FEA2007E94CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				671D688524DBF4BF004FDEAC /* VideoLessonsVC.swift */,
+				671D689424DBF547004FDEAC /* MoreVC.swift */,
+				671D689124DBF533004FDEAC /* IntercomVC.swift */,
+				671D688824DBF4E2004FDEAC /* PlayVideoVC.swift */,
+				671D688224DBF49E004FDEAC /* ArticleDetailsVC.swift */,
+				671D687E24DBF46E004FDEAC /* ArticlesVC.swift */,
+				671D686A24DBE3CB004FDEAC /* NewsVC.swift */,
+				671D68A324DC772C004FDEAC /* NewsBodyVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67BF30762556FEED007E94CF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				671D688E24DBF518004FDEAC /* NewsCell.swift */,
+				671D688C24DBF506004FDEAC /* ArticleCell.swift */,
+				671D688A24DBF4F2004FDEAC /* VideoCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		A0EFA4F5A19BFCAA9A7B35D8 /* Frameworks */ = {
@@ -409,9 +361,9 @@
 				671D68A424DC772C004FDEAC /* NewsBodyVC.swift in Sources */,
 				671D688B24DBF4F2004FDEAC /* VideoCell.swift in Sources */,
 				671D688324DBF49E004FDEAC /* ArticleDetailsVC.swift in Sources */,
-				671D68B024DDCF77004FDEAC /* OnboardingUDcheck.swift in Sources */,
 				671D688624DBF4BF004FDEAC /* VideoLessonsVC.swift in Sources */,
-				671D68A824DD7672004FDEAC /* UIButton_Extension.swift in Sources */,
+				67BF30702556FBCF007E94CF /* OnboardingService.swift in Sources */,
+				671D68A824DD7672004FDEAC /* UIButton+Extension.swift in Sources */,
 				671D689B24DC6EA4004FDEAC /* News.swift in Sources */,
 				671D688F24DBF518004FDEAC /* NewsCell.swift in Sources */,
 				671D688924DBF4E2004FDEAC /* PlayVideoVC.swift in Sources */,
@@ -419,14 +371,14 @@
 				671D689524DBF547004FDEAC /* MoreVC.swift in Sources */,
 				671D689224DBF533004FDEAC /* IntercomVC.swift in Sources */,
 				671D689924DC6E9E004FDEAC /* DataLoader.swift in Sources */,
-				671D68AC24DD7710004FDEAC /* UILabel_Extension.swift in Sources */,
+				671D68AC24DD7710004FDEAC /* UILabel+Extension.swift in Sources */,
 				671D686724DBE3CB004FDEAC /* AppDelegate.swift in Sources */,
 				671D686924DBE3CB004FDEAC /* SceneDelegate.swift in Sources */,
 				671D689F24DC6F2A004FDEAC /* Video.swift in Sources */,
 				671D687F24DBF46E004FDEAC /* ArticlesVC.swift in Sources */,
 				671D689D24DC6F24004FDEAC /* Article.swift in Sources */,
-				671D68A124DC74D0004FDEAC /* UIView_Extension.swift in Sources */,
-				671D68AA24DD76F7004FDEAC /* UIColor_Extension.swift in Sources */,
+				671D68A124DC74D0004FDEAC /* UIView+Extension.swift in Sources */,
+				671D68AA24DD76F7004FDEAC /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

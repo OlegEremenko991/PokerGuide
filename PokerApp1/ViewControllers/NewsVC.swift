@@ -18,15 +18,6 @@ final class NewsVC: UIViewController {
 // MARK: Private properties
 
     private let newsData = DataLoader().news
-    private var onboardingPages: [OnboardPage] {
-        let pageOne = OnboardPage(title: "Check out poker news", imageName: "page1", description: "Everything you need to know about WSOP is here!")
-        let pageTwo = OnboardPage(title: "Study poker rules", imageName: "page2", description: "Read poker guides to become familiar with the game and play better!")
-        let pageThree = OnboardPage(title: "Watch poker videos", imageName: "page3", description: "Raise your poker skill with video guides!")
-        let pageFour = OnboardPage(title: "Get support", imageName: "page4", description: "If you need support feel free to open 'Support' tab and ask your question!", advanceButtonTitle: "Get started!")
-        return [pageOne, pageTwo, pageThree, pageFour]
-    }
-    
-    private let onboardingAppearance = OnboardViewController.AppearanceConfiguration(tintColor: .black, titleColor: .black, textColor: .black, backgroundColor: .white, imageContentMode: .scaleAspectFit)
     
 // MARK: Lifecycle
     
@@ -48,12 +39,12 @@ final class NewsVC: UIViewController {
     }
     
     private func showOnboarding() {
-        if OnboardingUDcheck.shared.isNewUser() {
-            let onboardingVC = OnboardViewController(pageItems: onboardingPages, appearanceConfiguration: onboardingAppearance)
+        if OnboardingService.shared.isNewUser() {
+            let onboardingVC = OnboardViewController(pageItems: OnboardingService.shared.pages, appearanceConfiguration: OnboardingService.shared.appearance)
             onboardingVC.modalPresentationStyle = .fullScreen
             onboardingVC.presentFrom(self, animated: true)
         }
-        OnboardingUDcheck.shared.setIsNotNewUser() // disable onboarding
+        OnboardingService.shared.setIsNotNewUser() // disable onboarding
     }
 
 }
