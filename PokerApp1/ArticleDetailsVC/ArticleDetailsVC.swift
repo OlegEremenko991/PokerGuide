@@ -12,12 +12,12 @@ final class ArticleDetailsVC: UIViewController {
 
 // MARK: IBOutlets
 
-    @IBOutlet weak var articleImageView: UIImageView!
-    @IBOutlet weak var articleTitleLabel: UILabel!
-    @IBOutlet weak var articleAuthorLabel: UILabel!
-    @IBOutlet weak var articleBodyLabel: UILabel!
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var infoView: UIView!
+    @IBOutlet private weak var articleImageView: UIImageView!
+    @IBOutlet private weak var articleTitleLabel: UILabel!
+    @IBOutlet private weak var articleAuthorLabel: UILabel!
+    @IBOutlet private weak var articleBodyLabel: UILabel!
+    @IBOutlet private weak var backButton: UIButton!
+    @IBOutlet private weak var infoView: UIView!
     
 // MARK: Public properties
 

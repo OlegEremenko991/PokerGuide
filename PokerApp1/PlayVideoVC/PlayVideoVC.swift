@@ -13,7 +13,7 @@ final class PlayVideoVC: UIViewController, YTPlayerViewDelegate {
 
 // MARK: IBOutlets
     
-    @IBOutlet weak var playerView: YTPlayerView!
+    @IBOutlet private weak var playerView: YTPlayerView!
     
 // MARK: Public properties
     

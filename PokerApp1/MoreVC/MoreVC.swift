@@ -14,9 +14,9 @@ final class MoreVC: UIViewController {
 
 // MARK: IBOutlets
     
-    @IBOutlet weak var feedbackButton: UIButton!
-    @IBOutlet weak var bugButton: UIButton!
-    @IBOutlet weak var rateButton: UIButton!
+    @IBOutlet private weak var feedbackButton: UIButton!
+    @IBOutlet private weak var bugButton: UIButton!
+    @IBOutlet private weak var rateButton: UIButton!
     
 // MARK: Private properties
     

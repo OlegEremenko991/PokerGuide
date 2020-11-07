@@ -12,13 +12,13 @@ final class NewsBodyVC: UIViewController {
     
 // MARK: IBOutlets
 
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var newsTitleLabel: UILabel!
-    @IBOutlet weak var newsImageView: UIImageView!
-    @IBOutlet weak var newsBodyLabel: UILabel!
-    @IBOutlet weak var infoView: UIView!
-    @IBOutlet weak var newsDateLabel: UILabel!
-    @IBOutlet weak var newsAuthorLabel: UILabel!
+    @IBOutlet private weak var backButton: UIButton!
+    @IBOutlet private weak var newsTitleLabel: UILabel!
+    @IBOutlet private weak var newsImageView: UIImageView!
+    @IBOutlet private weak var newsBodyLabel: UILabel!
+    @IBOutlet private weak var infoView: UIView!
+    @IBOutlet private weak var newsDateLabel: UILabel!
+    @IBOutlet private weak var newsAuthorLabel: UILabel!
     
 // MARK: Public properties
 
