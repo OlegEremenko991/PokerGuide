@@ -48,11 +48,9 @@ extension ArticlesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let articleCell = tableView.dequeueReusableCell(withIdentifier: articleCellID) as! ArticleCell
         let article = articlesData[indexPath.row]
-        
-        articleCell.articleTitleLabel.text = article.title
-        articleCell.articleAuthorLabel.text = article.author
-        articleCell.articleImageView.image = UIImage(named: article.imageName)
-        
+        articleCell.setupCellWith(title: article.title,
+                                  author: article.author,
+                                  imageName: article.imageName)
         return articleCell
     }
     

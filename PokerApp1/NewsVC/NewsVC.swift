@@ -77,7 +77,7 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
         newsCell.setupCellWith(title: news.title,
                                date: news.date,
                                author: news.author,
-                               image: (UIImage(named: news.imageName)!))
+                               imageName: news.imageName)
         return newsCell
     }
     

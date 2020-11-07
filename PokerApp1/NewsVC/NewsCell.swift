@@ -34,11 +34,11 @@ final class NewsCell: UITableViewCell {
     
 // MARK: Public methods
     
-    func setupCellWith(title: String, date: String, author: String, image: UIImage) {
+    func setupCellWith(title: String, date: String, author: String, imageName: String) {
         newsTitle.text = title
         newsDate.text = date
         newsAuthor.text = author
-        newsImageView.image = image
+        newsImageView.image = UIImage(named: imageName)
     }
     
 // MARK: Private methods
