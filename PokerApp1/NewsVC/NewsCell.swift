@@ -12,11 +12,11 @@ final class NewsCell: UITableViewCell {
     
 // MARK: IBOutlets
 
-    @IBOutlet weak var newsTitle: UILabel!
-    @IBOutlet weak var newsDate: UILabel!
-    @IBOutlet weak var newsAuthor: UILabel!
-    @IBOutlet weak var backView2: UIView!
-    @IBOutlet weak var newsImageView: UIImageView!
+    @IBOutlet private weak var newsTitle: UILabel!
+    @IBOutlet private weak var newsDate: UILabel!
+    @IBOutlet private weak var newsAuthor: UILabel!
+    @IBOutlet private weak var newsImageView: UIImageView!
+    @IBOutlet private weak var backView2: UIView!
     
 // MARK: Lifecycle
     
@@ -30,6 +30,15 @@ final class NewsCell: UITableViewCell {
         selectedBackgroundView = UIView()
         selectedBackgroundView?.layer.cornerRadius = 10
         selectedBackgroundView?.backgroundColor = .lightGray
+    }
+    
+// MARK: Public methods
+    
+    func setupCellWith(title: String, date: String, author: String, image: UIImage) {
+        newsTitle.text = title
+        newsDate.text = date
+        newsAuthor.text = author
+        newsImageView.image = image
     }
     
 // MARK: Private methods

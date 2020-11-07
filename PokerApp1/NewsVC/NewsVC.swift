@@ -74,12 +74,10 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let newsCell = tableView.dequeueReusableCell(withIdentifier: newsCellID) as! NewsCell
         let news = newsData[indexPath.row]
-        
-        newsCell.newsImageView.image = UIImage(named: news.imageName)
-        newsCell.newsTitle.text = news.title
-        newsCell.newsDate.text = news.date
-        newsCell.newsAuthor.text = news.author
-        
+        newsCell.setupCellWith(title: news.title,
+                               date: news.date,
+                               author: news.author,
+                               image: (UIImage(named: news.imageName)!))
         return newsCell
     }
     
