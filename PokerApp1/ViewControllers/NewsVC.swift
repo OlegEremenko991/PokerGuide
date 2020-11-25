@@ -10,34 +10,46 @@ import UIKit
 import OnboardKit
 
 final class NewsVC: UIViewController {
-    
-// MARK: IBOutlets
+
+    // MARK: IBOutlets
 
     @IBOutlet private weak var tableView: UITableView!
-    
-// MARK: Private properties
 
-    private let newsData = DataLoader().news
-    
-// MARK: Lifecycle
-    
+    // MARK: Private properties
+
+    private var newsData = [News]()
+
+    // MARK: Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         showOnboarding()
+        loadNews()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: true) // Show navigation bar
     }
-    
-// MARK: Private methods
-    
+
+    // MARK: Private methods
+
     private func setupView() {
         self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
     }
-    
+
+    private func loadNews() {
+        DataLoader.loadData(decodingType: [News].self, resourceName: "News") { result in
+            switch result {
+            case .success(let news):
+                newsData = news.sorted(by: { $0.id < $1.id })
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+
     private func showOnboarding() {
         if OnboardingService.shared.isNewUser() {
             let onboardingVC = OnboardViewController(pageItems: OnboardingService.shared.pages, appearanceConfiguration: OnboardingService.shared.appearance)
@@ -53,14 +65,9 @@ final class NewsVC: UIViewController {
 
 extension NewsVC: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(250)
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsData.count
-    }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { CGFloat(250) }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { newsData.count }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let newsCell = tableView.dequeueReusableCell(withIdentifier: NewsCell.cellID) as! NewsCell
         let news = newsData[indexPath.row]
@@ -70,30 +77,23 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
                                imageName: news.imageName)
         return newsCell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // Set cell as selected
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        // Set cell as selected
         let newsCell = tableView.dequeueReusableCell(withIdentifier: NewsCell.cellID) as! NewsCell
         newsCell.isSelected = true
-        
+
         // Prepare data for NewsBodyVC
-        
         guard let targetVC = storyboard?.instantiateViewController(withIdentifier: "NewsBodyVC") as? NewsBodyVC else { return }
-        
+
         let news = newsData[indexPath.row]
-        
-        targetVC.newsImageName = news.imageName
-        targetVC.newsTitle = news.title
-        targetVC.newsBody = news.body
-        targetVC.newsAuthor = news.author
-        targetVC.newsDate = news.date
-        
+
+        targetVC.setupWithData(data: news)
+
         tableView.deselectRow(at: indexPath, animated: true)
-        
         self.navigationController?.pushViewController(targetVC, animated: true)
     }
-    
+
 }
 

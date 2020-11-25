@@ -9,16 +9,14 @@
 import UIKit
 
 extension UIButton {
-    
+
     // Custom button rounded style with white background
-    
     func roundedWithBackground(){
         self.layer.cornerRadius = 10
         self.backgroundColor = UIColor(white: 1, alpha: 0.4)
     }
-    
+
     // Custom button style
-    
     func customRoundedStyle(){
         self.backgroundColor = .black
         self.setTitleColor(.white, for: .normal)

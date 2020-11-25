@@ -9,66 +9,21 @@
 import Foundation
 
 public final class DataLoader {
-       
-// MARK: Public properties
-    
-    var news = [News]()
-    var articles = [Article]()
-    var videos = [Video]()
-    
-// MARK: Lifecycle
-    
-    init() {
-        loadNews()
-        loadArticles()
-        loadVideos()
-        sort()
-    }
-    
-// MARK: Private methods
 
-    private func loadNews() {
-        if let fileLocation = Bundle.main.url(forResource: "News", withExtension: "json") {
+    typealias ResultCompletion<T> = (Result<T, Error>) -> ()
+
+    static func loadData<T: Decodable>(decodingType: T.Type, resourceName: String, completion: ResultCompletion<T>) {
+        if let fileLocation = Bundle.main.url(forResource: resourceName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileLocation)
                 let jsonDecoder = JSONDecoder()
-                let dataFromJson = try jsonDecoder.decode([News].self, from: data)
-                self.news = dataFromJson
+                let dataFromJson = try jsonDecoder.decode(decodingType.self, from: data)
+                completion(.success(dataFromJson))
             } catch {
                 print(error)
+                completion(.failure(error))
             }
         }
     }
 
-    private func loadArticles() {
-        if let fileLocation = Bundle.main.url(forResource: "Articles", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: fileLocation)
-                let jsonDecoder = JSONDecoder()
-                let dataFromJson = try jsonDecoder.decode([Article].self, from: data)
-                self.articles = dataFromJson
-            } catch {
-                print(error)
-            }
-        }
-    }
-    
-    private func loadVideos() {
-        if let fileLocation = Bundle.main.url(forResource: "Videos", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: fileLocation)
-                let jsonDecoder = JSONDecoder()
-                let dataFromJson = try jsonDecoder.decode([Video].self, from: data)
-                self.videos = dataFromJson
-            } catch {
-                print(error)
-            }
-        }
-    }
-    
-    private func sort() {
-        self.news = self.news.sorted(by: { $0.id < $1.id })
-        self.articles = self.articles.sorted(by: { $0.id < $1.id })
-        self.videos = self.videos.sorted(by: { $0.id < $1.id })
-    }
 }

@@ -20,25 +20,34 @@ final class NewsBodyVC: UIViewController {
     @IBOutlet private weak var newsDateLabel: UILabel!
     @IBOutlet private weak var newsAuthorLabel: UILabel!
     
-// MARK: Public properties
+// MARK: Private properties
 
-    var newsImageName = ""
-    var newsTitle = ""
-    var newsAuthor = ""
-    var newsDate = ""
-    var newsBody = ""
+    private var newsImageName = ""
+    private var newsTitle = ""
+    private var newsAuthor = ""
+    private var newsDate = ""
+    private var newsBody = ""
     
 // MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(true, animated: true) // Hide navigation bar
+    }
+
+// MARK: Public methods
+
+    func setupWithData(data: News) {
+        newsImageName = data.imageName
+        newsTitle = data.title
+        newsAuthor = data.author
+        newsDate = data.date
+        newsBody = data.body
     }
     
 // MARK: Private methods

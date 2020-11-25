@@ -24,9 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         return true
     }
 
-    
     // Show Intercom when "chat" tabbar is tapped, close "chat" tabbar immediately after closing Intercom
-    
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController == tabBarController.viewControllers?[3] {
             DispatchQueue.main.async { Intercom.presentMessenger() }

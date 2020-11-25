@@ -19,12 +19,12 @@ final class ArticleDetailsVC: UIViewController {
     @IBOutlet private weak var backButton: UIButton!
     @IBOutlet private weak var infoView: UIView!
     
-// MARK: Public properties
+// MARK: Private properties
 
-    var articleImageName = ""
-    var articleTitle = ""
-    var articleAuthor = ""
-    var articleBody = ""
+    private var articleImageName = ""
+    private var articleTitle = ""
+    private var articleAuthor = ""
+    private var articleBody = ""
     
 // MARK: Lifecycle
     
@@ -36,6 +36,15 @@ final class ArticleDetailsVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(true, animated: true) // Hide navigation bar
+    }
+
+// MARK: Public methods
+
+    func setupWithData(data: Article) {
+        articleImageName = data.imageName
+        articleTitle = data.title
+        articleAuthor = data.author
+        articleBody = data.body
     }
     
 // MARK: Private methods

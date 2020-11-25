@@ -16,13 +16,26 @@ final class ArticlesVC: UIViewController {
     
 // MARK: Private properties
 
-    private let articlesData = DataLoader().articles
+    private var articlesData = [Article]()
     
 // MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadArticles()
+    }
+
+    // MARK: Private methods
+
+    private func loadArticles() {
+        DataLoader.loadData(decodingType: [Article].self, resourceName: "Articles") { result in
+            switch result {
+            case .success(let articles):
+                articlesData = articles.sorted(by: { $0.id < $1.id })
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,15 +48,10 @@ final class ArticlesVC: UIViewController {
 // MARK: TableView DataSource and Delegate
 
 extension ArticlesVC: UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(130)
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return articlesData.count
-    }
-    
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { CGFloat(130) }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { articlesData.count }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let articleCell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.cellID) as! ArticleCell
         let article = articlesData[indexPath.row]
@@ -56,23 +64,17 @@ extension ArticlesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
         // Set cell as selected
-
         let articleCell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.cellID) as! ArticleCell
         articleCell.isSelected = true
-        
+
         // Prepare data for ArticleDetailsVC
-        
         guard let targetVC = storyboard?.instantiateViewController(withIdentifier: "ArticleDetailsVC") as? ArticleDetailsVC else { return }
-        
+
         let article = articlesData[indexPath.row]
-        
-        targetVC.articleImageName = article.imageName
-        targetVC.articleTitle = article.title
-        targetVC.articleAuthor = article.author
-        targetVC.articleBody = article.body
-        
+
+        targetVC.setupWithData(data: article)
+
         tableView.deselectRow(at: indexPath, animated: true)
-        
         self.navigationController?.pushViewController(targetVC, animated: true)
     }
 }

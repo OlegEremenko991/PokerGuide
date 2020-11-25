@@ -11,7 +11,6 @@ import UIKit
 extension UIView {
 
     // Add shadow with configurable offset
-    
     func addShadow(width: Double, height: Double){
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.2

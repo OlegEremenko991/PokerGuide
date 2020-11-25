@@ -11,11 +11,15 @@ import UIKit
 final class VideoCell: UITableViewCell {
 
 // MARK: IBOutlets
-    
-    @IBOutlet weak var backView2: UIView!
-    @IBOutlet weak var previewImageView: UIImageView!
-    @IBOutlet weak var previewTitleLabel: UILabel!
-    
+
+    @IBOutlet private weak var backView2: UIView!
+    @IBOutlet private weak var previewImageView: UIImageView!
+    @IBOutlet private weak var previewTitleLabel: UILabel!
+
+// MARK: Public properties
+
+    static let cellID = "VideoCellID"
+
 // MARK: Lifecycle
 
     override func awakeFromNib() {
@@ -28,6 +32,13 @@ final class VideoCell: UITableViewCell {
         selectedBackgroundView = UIView()
         selectedBackgroundView?.layer.cornerRadius = 10
         selectedBackgroundView?.backgroundColor = .lightGray
+    }
+
+// MARK: Public methods
+        
+    func setupCellWith(title: String, imageName: String) {
+        previewTitleLabel.text = title
+        previewImageView.image = UIImage(named: imageName)
     }
 
 // MARK: Private methods

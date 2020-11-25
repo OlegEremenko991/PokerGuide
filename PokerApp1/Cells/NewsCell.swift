@@ -9,7 +9,7 @@
 import UIKit
 
 final class NewsCell: UITableViewCell {
-    
+
 // MARK: IBOutlets
 
     @IBOutlet private weak var newsTitle: UILabel!
@@ -37,27 +37,27 @@ final class NewsCell: UITableViewCell {
     }
     
 // MARK: Public methods
-    
+
     func setupCellWith(title: String, date: String, author: String, imageName: String) {
         newsTitle.text = title
         newsDate.text = date
         newsAuthor.text = author
         newsImageView.image = UIImage(named: imageName)
     }
-    
+
 // MARK: Private methods
-    
+
     private func setupView() {
         contentView.layer.cornerRadius = 10
-        
+
         newsImageView.layer.cornerRadius = 10
         backView2.layer.cornerRadius = 10
         backView2.addShadow(width: 1.0, height: 2.0)
         backView2.backgroundColor = .black
-        
+
         setupLabels()
     }
-    
+
     private func setupLabels() {
         let labels = [newsTitle, newsDate, newsAuthor]
         for x in labels {
