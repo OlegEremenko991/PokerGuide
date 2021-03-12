@@ -10,23 +10,47 @@ import UIKit
 
 final class ArticleDetailsVC: UIViewController {
 
-// MARK: IBOutlets
+    // MARK: - IBOutlets
 
-    @IBOutlet private weak var articleImageView: UIImageView!
-    @IBOutlet private weak var articleTitleLabel: UILabel!
-    @IBOutlet private weak var articleAuthorLabel: UILabel!
-    @IBOutlet private weak var articleBodyLabel: UILabel!
-    @IBOutlet private weak var backButton: UIButton!
-    @IBOutlet private weak var infoView: UIView!
+    @IBOutlet private weak var articleImageView: UIImageView! {
+        didSet {
+            articleImageView.image = UIImage(named: articleImageName)
+            articleImageView.backgroundColor = .black
+        }
+    }
+
+    @IBOutlet private weak var articleTitleLabel: UILabel! {
+        didSet { articleTitleLabel.text = articleTitle }
+    }
+
+    @IBOutlet private weak var articleAuthorLabel: UILabel! {
+        didSet { articleAuthorLabel.text = articleAuthor }
+    }
+
+    @IBOutlet private weak var articleBodyLabel: UILabel! {
+        didSet { articleBodyLabel.text = articleBody }
+    }
+
+    @IBOutlet private weak var backButton: UIButton! {
+        didSet { backButton.roundedWithBackground() }
+    }
+
+    @IBOutlet private weak var infoView: UIView! {
+        didSet {
+            infoView.layer.cornerRadius = 25
+            infoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            infoView.clipsToBounds = true
+        }
+    }
     
-// MARK: Private properties
+    // MARK: - Private properties
 
     private var articleImageName = ""
     private var articleTitle = ""
     private var articleAuthor = ""
     private var articleBody = ""
     
-// MARK: Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +58,11 @@ final class ArticleDetailsVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.navigationController?.setNavigationBarHidden(true, animated: true) // Hide navigation bar
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
-// MARK: Public methods
+    // MARK: - Public methods
 
     func setupWithData(data: Article) {
         articleImageName = data.imageName
@@ -47,36 +71,24 @@ final class ArticleDetailsVC: UIViewController {
         articleBody = data.body
     }
     
-// MARK: Private methods
+    // MARK: - Private methods
     
     private func setupView(){
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
-        
-        articleImageView.image = UIImage(named: articleImageName)
-        articleImageView.backgroundColor = .black
-        
-        articleTitleLabel.text = articleTitle
-        articleBodyLabel.text = articleBody
-        articleAuthorLabel.text = articleAuthor
-        
-        infoView.layer.cornerRadius = 25
-        infoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        infoView.clipsToBounds = true
-        
-        backButton.roundedWithBackground()
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
-// MARK: IBActions
+    // MARK: - IBActions
 
     @IBAction func backButtonTapped(_ sender: UIButton) {
-        self.navigationController?.popToRootViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 
 }
 
-// MARK: UIGestureRecognizerDelegate - enable swipe to go back
+// MARK: - UIGestureRecognizerDelegate
 
 extension ArticleDetailsVC: UIGestureRecognizerDelegate {
+    // Enable swipe to go back
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }

@@ -12,29 +12,28 @@ import MessageUI
 
 final class MoreVC: UIViewController {
 
-// MARK: IBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet private weak var feedbackButton: UIButton!
     @IBOutlet private weak var bugButton: UIButton!
     @IBOutlet private weak var rateButton: UIButton!
     
-// MARK: Private properties
+    // MARK: - Private properties
     
     private let devEmail = "support@pokerguides.com"
     
-// MARK: Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
     }
     
-// MARK: Private methods
+    // MARK: - Private methods
     
     private func setupButtons() {
-        let buttons = [feedbackButton, bugButton, rateButton]
-        for button in buttons {
-            button?.customRoundedStyle()
+        [feedbackButton, bugButton, rateButton].forEach {
+            $0?.customRoundedStyle()
         }
     }
     
@@ -55,16 +54,14 @@ final class MoreVC: UIViewController {
         SKStoreReviewController.requestReview()
     }
     
-// MARK: IBActions
+    // MARK: - IBActions
 
     @IBAction func feedbackTapped(_ sender: UIButton) {
-        let subject = "Feedback to app developers"
-        sendEmail(subject: subject)
+        sendEmail(subject: "Feedback to app developers")
     }
     
     @IBAction func bugTapped(_ sender: UIButton) {
-        let subject = "Report a problem in app"
-        sendEmail(subject: subject)
+        sendEmail(subject: "Report a problem in app")
     }
     
     @IBAction func rateTapped(_ sender: UIButton) {
@@ -73,7 +70,7 @@ final class MoreVC: UIViewController {
     
 }
 
-// MARK: MFMailComposeViewControllerDelegate
+// MARK: - MFMailComposeViewControllerDelegate
 
 extension MoreVC: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController,didFinishWith result: MFMailComposeResult, error: Error?) {

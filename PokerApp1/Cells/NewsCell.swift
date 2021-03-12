@@ -18,6 +18,7 @@ final class NewsCell: UITableViewCell {
     @IBOutlet private weak var newsImageView: UIImageView! {
         didSet { newsImageView.layer.cornerRadius = 10 }
     }
+
     @IBOutlet private weak var backView2: UIView! {
         didSet {
             backView2.layer.cornerRadius = 10

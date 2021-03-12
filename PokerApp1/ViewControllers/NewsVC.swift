@@ -11,15 +11,15 @@ import OnboardKit
 
 final class NewsVC: UIViewController {
 
-    // MARK: IBOutlets
+    // MARK: - IBOutlets
 
     @IBOutlet private weak var tableView: UITableView!
 
-    // MARK: Private properties
+    // MARK: - Private properties
 
     private var newsData = [News]()
 
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +29,14 @@ final class NewsVC: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.navigationController?.setNavigationBarHidden(false, animated: true) // Show navigation bar
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     // MARK: Private methods
 
     private func setupView() {
-        self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
+        tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
     }
 
     private func loadNews() {
@@ -61,7 +61,7 @@ final class NewsVC: UIViewController {
 
 }
 
-// MARK: TableView DataSource and Delegate
+// MARK: - TableView DataSource and Delegate
 
 extension NewsVC: UITableViewDataSource, UITableViewDelegate {
     
@@ -79,7 +79,6 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         // Set cell as selected
         let newsCell = tableView.dequeueReusableCell(withIdentifier: NewsCell.cellID) as! NewsCell
         newsCell.isSelected = true
@@ -88,11 +87,10 @@ extension NewsVC: UITableViewDataSource, UITableViewDelegate {
         guard let targetVC = storyboard?.instantiateViewController(withIdentifier: "NewsBodyVC") as? NewsBodyVC else { return }
 
         let news = newsData[indexPath.row]
-
         targetVC.setupWithData(data: news)
 
         tableView.deselectRow(at: indexPath, animated: true)
-        self.navigationController?.pushViewController(targetVC, animated: true)
+        navigationController?.pushViewController(targetVC, animated: true)
     }
 
 }

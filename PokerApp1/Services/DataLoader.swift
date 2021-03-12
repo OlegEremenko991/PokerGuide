@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class DataLoader {
+final class DataLoader {
 
     typealias ResultCompletion<T> = (Result<T, Error>) -> ()
 

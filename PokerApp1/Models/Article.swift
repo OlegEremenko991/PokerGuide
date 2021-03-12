@@ -9,9 +9,9 @@
 import Foundation
 
 struct Article: Codable {
-    var id: Int
-    var title: String
-    var imageName: String
-    var author: String
-    var body: String
+    let id: Int
+    let title: String
+    let imageName: String
+    let author: String
+    let body: String
 }

@@ -22,7 +22,6 @@
 		671D688B24DBF4F2004FDEAC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D688A24DBF4F2004FDEAC /* VideoCell.swift */; };
 		671D688D24DBF506004FDEAC /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D688C24DBF506004FDEAC /* ArticleCell.swift */; };
 		671D688F24DBF518004FDEAC /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D688E24DBF518004FDEAC /* NewsCell.swift */; };
-		671D689224DBF533004FDEAC /* IntercomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689124DBF533004FDEAC /* IntercomVC.swift */; };
 		671D689524DBF547004FDEAC /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689424DBF547004FDEAC /* MoreVC.swift */; };
 		671D689924DC6E9E004FDEAC /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689824DC6E9E004FDEAC /* DataLoader.swift */; };
 		671D689B24DC6EA4004FDEAC /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D689A24DC6EA4004FDEAC /* News.swift */; };
@@ -57,7 +56,6 @@
 		671D688A24DBF4F2004FDEAC /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		671D688C24DBF506004FDEAC /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		671D688E24DBF518004FDEAC /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
-		671D689124DBF533004FDEAC /* IntercomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercomVC.swift; sourceTree = "<group>"; };
 		671D689424DBF547004FDEAC /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		671D689824DC6E9E004FDEAC /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		671D689A24DC6EA4004FDEAC /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 			children = (
 				671D688524DBF4BF004FDEAC /* VideoLessonsVC.swift */,
 				671D689424DBF547004FDEAC /* MoreVC.swift */,
-				671D689124DBF533004FDEAC /* IntercomVC.swift */,
 				671D688824DBF4E2004FDEAC /* PlayVideoVC.swift */,
 				671D688224DBF49E004FDEAC /* ArticleDetailsVC.swift */,
 				671D687E24DBF46E004FDEAC /* ArticlesVC.swift */,
@@ -369,7 +366,6 @@
 				671D688924DBF4E2004FDEAC /* PlayVideoVC.swift in Sources */,
 				671D688D24DBF506004FDEAC /* ArticleCell.swift in Sources */,
 				671D689524DBF547004FDEAC /* MoreVC.swift in Sources */,
-				671D689224DBF533004FDEAC /* IntercomVC.swift in Sources */,
 				671D689924DC6E9E004FDEAC /* DataLoader.swift in Sources */,
 				671D68AC24DD7710004FDEAC /* UILabel+Extension.swift in Sources */,
 				671D686724DBE3CB004FDEAC /* AppDelegate.swift in Sources */,
@@ -441,6 +437,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator14.4]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -502,6 +499,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator14.4]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

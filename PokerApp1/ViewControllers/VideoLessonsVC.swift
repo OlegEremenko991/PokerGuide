@@ -10,22 +10,22 @@ import UIKit
 
 final class VideoLessonsVC: UIViewController {
 
-// MARK: IBOutlets
+    // MARK: - IBOutlets
     
     @IBOutlet private weak var tableView: UITableView!
     
-// MARK: Private properties
+    // MARK: - Private properties
 
     private var videosData = [Video]()
     
-// MARK: Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadVideos()
     }
 
-    // MARK: Private methods
+    // MARK: - Private methods
 
     private func loadVideos() {
         DataLoader.loadData(decodingType: [Video].self, resourceName: "Videos") { result in
@@ -40,7 +40,7 @@ final class VideoLessonsVC: UIViewController {
 
 }
 
-// MARK: TableView DataSource and Delegate
+// MARK: - TableView DataSource and Delegate
 
 extension VideoLessonsVC: UITableViewDataSource, UITableViewDelegate {
 
@@ -56,7 +56,6 @@ extension VideoLessonsVC: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         // Set cell as selected
         let videoCell = tableView.dequeueReusableCell(withIdentifier: VideoCell.cellID) as! VideoCell
         videoCell.isSelected = true
@@ -68,7 +67,7 @@ extension VideoLessonsVC: UITableViewDataSource, UITableViewDelegate {
         targetVC.videoID = video.videoID
 
         tableView.deselectRow(at: indexPath, animated: true)
-        self.navigationController?.pushViewController(targetVC, animated: true)
+        navigationController?.pushViewController(targetVC, animated: true)
     }
 
 }

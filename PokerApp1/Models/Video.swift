@@ -9,8 +9,8 @@
 import Foundation
 
 struct Video: Codable {
-    var id: Int
-    var title: String
-    var imageName: String
-    var videoID: String
+    let id: Int
+    let title: String
+    let imageName: String
+    let videoID: String
 }

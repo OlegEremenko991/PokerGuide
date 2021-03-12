@@ -11,31 +11,28 @@ import youtube_ios_player_helper
 
 final class PlayVideoVC: UIViewController, YTPlayerViewDelegate {
 
-// MARK: IBOutlets
+    // MARK: - IBOutlets
     
-    @IBOutlet private weak var playerView: YTPlayerView!
+    @IBOutlet private weak var playerView: YTPlayerView! {
+        didSet { playerView.delegate = self }
+    }
     
-// MARK: Public properties
+    // MARK: - Public properties
     
     var videoID = ""
     
-// MARK: Lifecycle
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         loadVideo(id: videoID)
     }
     
-// MARK: Private methods
-    
-    private func setupView() {
-        playerView.delegate = self
-    }
-    
+    // MARK: - Private methods
+
     private func loadVideo(id: String){
         DispatchQueue.main.async {
-            self.playerView.load(withVideoId: id, playerVars: ["playsinline":1])
+            self.playerView.load(withVideoId: id, playerVars: ["playsinline": 1])
         }
     }
 

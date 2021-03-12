@@ -15,9 +15,11 @@ final class VideoCell: UITableViewCell {
     @IBOutlet private weak var previewImageView: UIImageView! {
         didSet { previewImageView.layer.cornerRadius = 10 }
     }
+
     @IBOutlet private weak var previewTitleLabel: UILabel! {
         didSet { previewTitleLabel.setCustomBackground() }
     }
+
     @IBOutlet private weak var backView2: UIView! {
         didSet {
             backView2.layer.cornerRadius = 10

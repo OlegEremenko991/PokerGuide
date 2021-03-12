@@ -14,14 +14,15 @@ final class ArticleCell: UITableViewCell {
 
     @IBOutlet private weak var articleTitleLabel: UILabel!
     @IBOutlet private weak var articleAuthorLabel: UILabel!
+    @IBOutlet private weak var articleImageView: UIImageView! {
+        didSet { articleImageView.layer.cornerRadius = 10 }
+    }
+
     @IBOutlet private weak var backView2: UIView! {
         didSet {
             backView2.layer.cornerRadius = 10
             backView2.addShadow(width: 1.0, height: 2.0)
         }
-    }
-    @IBOutlet private weak var articleImageView: UIImageView! {
-        didSet { articleImageView.layer.cornerRadius = 10 }
     }
 
     // MARK: - Public properties

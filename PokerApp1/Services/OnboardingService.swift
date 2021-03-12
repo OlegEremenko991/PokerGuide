@@ -11,7 +11,7 @@ import OnboardKit
 
 final class OnboardingService {
 
-// MARK: Public properties
+    // MARK: -- Public properties
 
     static let shared = OnboardingService()
 
@@ -24,14 +24,14 @@ final class OnboardingService {
 
     let appearance = OnboardViewController.AppearanceConfiguration(tintColor: .black, titleColor: .black, textColor: .black, backgroundColor: .white, imageContentMode: .scaleAspectFit)
 
-// MARK: Private properties
+    // MARK: - Private properties
 
     private let newUserKey = "isNewUser"
 
-// MARK: Public methods
+    // MARK: - Public methods
 
     func isNewUser() -> Bool {
-        return !UserDefaults.standard.bool(forKey: newUserKey)
+        !UserDefaults.standard.bool(forKey: newUserKey)
     }
 
     func setIsNotNewUser() {

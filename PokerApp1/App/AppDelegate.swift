@@ -13,14 +13,13 @@ fileprivate let INTERCOM_APP_ID = "yourIDhere"
 fileprivate let INTERCOM_API_KEY = "someKey"
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Intercom.setApiKey(INTERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
         Intercom.registerUnidentifiedUser()
-
         return true
     }
 
