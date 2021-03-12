@@ -10,19 +10,27 @@ import UIKit
 
 final class NewsCell: UITableViewCell {
 
-// MARK: IBOutlets
+    // MARK: - IBOutlets
 
     @IBOutlet private weak var newsTitle: UILabel!
     @IBOutlet private weak var newsDate: UILabel!
     @IBOutlet private weak var newsAuthor: UILabel!
-    @IBOutlet private weak var newsImageView: UIImageView!
-    @IBOutlet private weak var backView2: UIView!
+    @IBOutlet private weak var newsImageView: UIImageView! {
+        didSet { newsImageView.layer.cornerRadius = 10 }
+    }
+    @IBOutlet private weak var backView2: UIView! {
+        didSet {
+            backView2.layer.cornerRadius = 10
+            backView2.backgroundColor = .black
+            backView2.addShadow(width: 1.0, height: 2.0)
+        }
+    }
     
-// MARK: Public properties
+    // MARK: - Public properties
     
     static let cellID = "NewsCellID"
     
-// MARK: Lifecycle
+    // MARK: - Lifecycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,7 +44,7 @@ final class NewsCell: UITableViewCell {
         selectedBackgroundView?.backgroundColor = .lightGray
     }
     
-// MARK: Public methods
+    // MARK: - Public methods
 
     func setupCellWith(title: String, date: String, author: String, imageName: String) {
         newsTitle.text = title
@@ -45,24 +53,11 @@ final class NewsCell: UITableViewCell {
         newsImageView.image = UIImage(named: imageName)
     }
 
-// MARK: Private methods
+    // MARK: - Private methods
 
     private func setupView() {
         contentView.layer.cornerRadius = 10
-
-        newsImageView.layer.cornerRadius = 10
-        backView2.layer.cornerRadius = 10
-        backView2.addShadow(width: 1.0, height: 2.0)
-        backView2.backgroundColor = .black
-
-        setupLabels()
-    }
-
-    private func setupLabels() {
-        let labels = [newsTitle, newsDate, newsAuthor]
-        for x in labels {
-            x?.textColor = .white
-        }
+        [newsTitle, newsDate, newsAuthor].forEach { $0?.textColor = .white }
     }
 
 }

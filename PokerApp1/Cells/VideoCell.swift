@@ -10,17 +10,26 @@ import UIKit
 
 final class VideoCell: UITableViewCell {
 
-// MARK: IBOutlets
+    // MARK: - IBOutlets
 
-    @IBOutlet private weak var backView2: UIView!
-    @IBOutlet private weak var previewImageView: UIImageView!
-    @IBOutlet private weak var previewTitleLabel: UILabel!
+    @IBOutlet private weak var previewImageView: UIImageView! {
+        didSet { previewImageView.layer.cornerRadius = 10 }
+    }
+    @IBOutlet private weak var previewTitleLabel: UILabel! {
+        didSet { previewTitleLabel.setCustomBackground() }
+    }
+    @IBOutlet private weak var backView2: UIView! {
+        didSet {
+            backView2.layer.cornerRadius = 10
+            backView2.addShadow(width: 1.0, height: 2.0)
+        }
+    }
 
-// MARK: Public properties
+    // MARK: - Public properties
 
     static let cellID = "VideoCellID"
 
-// MARK: Lifecycle
+    // MARK: - Lifecycle
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,20 +43,17 @@ final class VideoCell: UITableViewCell {
         selectedBackgroundView?.backgroundColor = .lightGray
     }
 
-// MARK: Public methods
+    // MARK: - Public methods
         
     func setupCellWith(title: String, imageName: String) {
         previewTitleLabel.text = title
         previewImageView.image = UIImage(named: imageName)
     }
 
-// MARK: Private methods
+    // MARK: - Private methods
 
     private func setupView(){
         contentView.layer.cornerRadius = 10
-        previewImageView.layer.cornerRadius = 10
-        backView2.layer.cornerRadius = 10
-        backView2.addShadow(width: 1.0, height: 2.0)
-        previewTitleLabel.setCustomBackground()
     }
+
 }
